@@ -3,6 +3,7 @@ import {motion} from 'framer-motion'
 import Image from 'next/image'
 
 type Props = {setShowModal: any}
+const imageLoader = require("../pages/api/imageLoader.js");
 
 export default function ProjectModal(obj: Props) {
     
@@ -40,6 +41,7 @@ export default function ProjectModal(obj: Props) {
                     <div className="relative p-8 flex items-center justify-center">
                         <Image
                         src="/scale-out-overview.png"
+                        loader={imageLoader}
                         width={704}
                         height={545}
                         alt='scale-out-overview'
@@ -91,40 +93,44 @@ export default function ProjectModal(obj: Props) {
                         <h3 className='bg-[#f1d6a6] text-2xl border-t border-solid border-black rounded-t-md text-[#006bad] text-left -mt-2 px-8 py-8 uppercase font-bold tracking-[0.3rem]'>Solution</h3>
                         <div className='bg-slate-200 font-semibold text-lg px-8 py-6 tracking-wider'>
                             <ul className='flex flex-col justify-center items-center list-disc pl-6 pt-4 space-y-8 text-blue-400 marker:text-blue-400 font-bold text-xl'>
-                                <h4 className='text-black'>STEP1: Overall Flow</h4>
+                                <h4 className='text-black text-3xl'>STEP 1: Overall Flow</h4>
                                 <li>Define clear spec documents</li>
                                 <li>Draw flow chart</li>
                                 {/* image: flow designed */}
                                 <Image
                                 src="/scale-out-flow.png"
+                                loader={imageLoader}
                                 width={866}
                                 height={257}
                                 alt='scale-out-flow'
                                 ></Image>
                                 <div className='border border-b border-white w-[20vw] mx-auto'></div>
-                                <h4 className='text-black'>STEP2: Prototype</h4>
+                                <h4 className='text-black text-3xl'>STEP 2: Prototype</h4>
                                 <li>Turn into Adobe XD prototype</li>
                                 <li>Consider operation style consistency</li>
                                 {/* image: style consistency */}
                                 <Image
                                 src="/scale-out-prototype.jpg"
+                                loader={imageLoader}
                                 width={800}
                                 height={730}
                                 alt='scale-out-prototype'
                                 ></Image>
                                 <Image
                                 src="/scale-out-style.png"
+                                loader={imageLoader}
                                 width={800}
                                 height={430}
                                 alt='scale-out-style'
                                 ></Image>
                                 <div className='border border-b border-white w-[20vw] mx-auto'></div>
-                                <h4 className='text-black'>STEP3: Rolling Enhancement</h4>
+                                <h4 className='text-black text-3xl'>STEP 3: Rolling Enhancement</h4>
                                 <li>In engineering phase, adjust required detail information</li>
                                 <li>Remain simple and understandable</li>
                                 {/* image: status display */}
                                 <Image
                                 src="/scale-out-detail.png"
+                                loader={imageLoader}
                                 width={800}
                                 height={444}
                                 alt='scale-out-detail'
@@ -155,6 +161,7 @@ export default function ProjectModal(obj: Props) {
                                 {/* image: final design */}
                                 <Image
                                 src="/scale-out-final.png"
+                                loader={imageLoader}
                                 width={866}
                                 height={257}
                                 alt='scale-out-final-design'
@@ -163,11 +170,15 @@ export default function ProjectModal(obj: Props) {
                         </div>
                     </div>
                     {/*footer*/}
-                    <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">                        
+                    <div className="flex flex-row items-center justify-center p-6 border-t border-solid border-slate-200 rounded-b">                        
+                        <button className='uppercase bg-blue-300 rounded-md text-black py-2 px-4 font-bold'
+                        onClick={() => obj.setShowModal(false)}>
+                        close
+                        </button>
                     </div>
                 </div>
             </div>
-        </motion.div><div className="opacity-25 fixed inset-0 z-40 bg-black"></div></>
+        </motion.div></>
         
     )
 }

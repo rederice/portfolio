@@ -3,6 +3,7 @@ import {motion} from "framer-motion"
 import Image from "next/image"
 
 type Props = {}
+const imageLoader = require("../pages/api/imageLoader.js");
 
 export default function Header({}: Props) {
   return (
@@ -45,6 +46,7 @@ export default function Header({}: Props) {
             <Image 
             className='p-1'
             src="/email_blue.png" 
+            loader={imageLoader}
             width={30}
             height={30}
             alt="email" />

@@ -7,7 +7,7 @@ type Props = {}
 export default function Projects({}: Props) {
     const projects = [{
         num: 1,
-        projectAvatar: "/infortrend.jpg",
+        projectAvatar: "/portfolio/infortrend.jpg",
         projectName: "NAS Scale-Out Function Design",
         projectTitle: "Product Manager, Infortrend Technology Inc.",
         projectTags: ["UX design", "Tech research"],
@@ -15,7 +15,7 @@ export default function Projects({}: Props) {
         projectIntro: "Introducing a panacea backstage management UI for Storage Systems across different devices"
     },{
         num: 2,
-        projectAvatar: "/richi.jpg",
+        projectAvatar: "/portfolio/richi.jpg",
         projectName: "Public Decision Making Map System",
         projectTitle: "Full Stack Engineer, RiChi Technology Inc.",
         projectTags: ["Front-end Design"],
@@ -23,7 +23,7 @@ export default function Projects({}: Props) {
         projectIntro: "Developed a fancy digital map operation and dashboard GUI for government users"
     },{
         num: 3,
-        projectAvatar: "/nslab.jpg",
+        projectAvatar: "/portfolio/nslab.jpg",
         projectName: "An Investigation of Cyber Autonomy on Government Websites",
         projectTitle: "Special Research, Network Security Lab, National Taiwan University",
         projectTags: ["Tech research", "Presentation"],
@@ -31,7 +31,7 @@ export default function Projects({}: Props) {
         projectIntro: "Two-year scale analysis with data mining on G7 government websites cyber autonomy issues"
     },{
         num: 4,
-        projectAvatar: "/nchc.jpg",
+        projectAvatar: "/portfolio/nchc.jpg",
         projectName: "Certificate Verification System on Blockchain",
         projectTitle: "Internship, National Center for High-performance Computing",
         projectTags: ["Tech research", "Presentation"],

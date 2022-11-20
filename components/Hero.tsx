@@ -5,6 +5,7 @@ import Image from "next/image"
 import Link from 'next/link'
 
 type Props = {}
+const imageLoader = require("../pages/api/imageLoader.js");
 
 export default function Hero({}: Props) {
     const [text, count] = useTypewriter({
@@ -22,7 +23,8 @@ export default function Hero({}: Props) {
         <BackgroundCircles />
         <Image
         className='relative rounded-full h-32 w-32 mx-auto'
-        src="/avatar.jpeg" 
+        src="/avatar.jpeg"
+        loader={imageLoader}
         width={100}
         height={100}
         alt="avatar" />

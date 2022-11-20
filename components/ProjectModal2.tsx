@@ -3,6 +3,7 @@ import {motion} from 'framer-motion'
 import Image from 'next/image'
 
 type Props = {setShowModal: any}
+const imageLoader = require("../pages/api/imageLoader.js");
 
 export default function ProjectModal(obj: Props) {
     
@@ -40,6 +41,7 @@ export default function ProjectModal(obj: Props) {
                     <div className="relative p-8 flex items-center justify-center">
                         <Image
                         src="/typhoon-overview.jpg"
+                        loader={imageLoader}
                         width={704}
                         height={545}
                         alt='typhoon-overview'
@@ -103,6 +105,7 @@ export default function ProjectModal(obj: Props) {
                                 {/* image: typhoon compare */}
                                 <Image
                                 src="/typhoon-comp.png"
+                                loader={imageLoader}
                                 width={866}
                                 height={257}
                                 alt='typhoon-comp'
@@ -115,6 +118,7 @@ export default function ProjectModal(obj: Props) {
                                 {/* image: typhoon timeline */}
                                 <Image
                                 src="/typhoon-timeline.png"
+                                loader={imageLoader}
                                 width={800}
                                 height={430}
                                 alt='typhoon-timeline'
@@ -128,6 +132,7 @@ export default function ProjectModal(obj: Props) {
                                 {/* image: typhoon cards */}
                                 <Image
                                 src="/typhoon-card.png"
+                                loader={imageLoader}
                                 width={800}
                                 height={444}
                                 alt='typhoon-card'
@@ -136,11 +141,15 @@ export default function ProjectModal(obj: Props) {
                         </div>
                     </div>
                     {/*footer*/}
-                    <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">                        
+                    <div className="flex flex-row items-center justify-center p-6 border-t border-solid border-slate-200 rounded-b">                        
+                        <button className='uppercase bg-blue-300 rounded-md text-black py-2 px-4 font-bold'
+                        onClick={() => obj.setShowModal(false)}>
+                        close
+                        </button>
                     </div>
                 </div>
             </div>
-        </motion.div><div className="opacity-25 fixed inset-0 z-40 bg-black"></div></>
+        </motion.div></>
         
     )
 }
