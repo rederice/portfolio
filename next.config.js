@@ -6,8 +6,8 @@ const nextConfig = {
     path: "",
   },
   swcMinify: true,
-  basePath: "/nextjs-website",
-  assetPrefix: "/nextjs-website"
+  basePath: "/portfolio",
+  assetPrefix: "/portfolio"
 }
 
 module.exports = nextConfig
