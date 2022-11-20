@@ -17,7 +17,7 @@ export default function ProjectModal(obj: Props) {
             <div className="relative w-auto py-6 mx-auto max-w-[60vw]">
                 {/*content*/}
                 <div className="flex flex-col border-0 rounded-lg shadow-lg relative w-full overflow-y-scroll h-screen
-                bg-[rgb(36,36,36)] outline-none focus:outline-none">
+                bg-[rgb(36,36,36)] outline-none focus:outline-none overscroll-contain">
                     {/*header*/}
                     <div className="flex flex-row items-center p-5 bg-blue-400 rounded-t">
                         <div className='relative flex flex-col w-full'>
