@@ -8,4 +8,10 @@
         text-[#71d7ff] transition-all
         hover:border-[#1f8db9]/40 hover:text-[#71d7ff]/80 hover:bg-[#333]/40
     }
+    .projectSlideHighlightText {
+        @apply text-blue-400 underline underline-offset-4 decoration-2 font-bold
+    }
+    .projectSlideUnderlineText {
+        @apply decoration-blue-400 underline underline-offset-4 decoration-2
+    }
 }

@@ -12,34 +12,37 @@ export default function ProjectModal(obj: Props) {
         initial={{scale: 0.1, opacity: 0.1}}
         transition={{duration: 0.2}}
         whileInView={{scale: 1, opacity: 1}}
-        className="flex fixed justify-center items-center overflow-hidden inset-0 z-50 outline-none focus:outline-none bg-[#333]/80 h-screen"
+        className="flex fixed justify-center items-center overflow-hidden inset-0 z-50 outline-none focus:outline-none bg-[#444]/90 h-screen"
         >
-            <div className="relative w-auto py-6 mx-auto max-w-[60vw]">
+            <div className="flex py-6 items-center justify-center w-[100vw]">
                 {/*content*/}
-                <div className="flex flex-col border-0 rounded-lg shadow-lg relative w-full overflow-y-scroll h-screen
-                bg-[rgb(36,36,36)] outline-none focus:outline-none overscroll-contain">
+                <div className="flex flex-col items-center border-0 rounded-lg shadow-lg relative w-full overflow-y-scroll h-screen
+                outline-none focus:outline-none overscroll-contain">
+                    {/*container*/}
+                    <div className='max-w-[1140px] bg-[rgb(36,36,36)]'>
                     {/*header*/}
-                    <div className="flex flex-row items-center p-5 bg-blue-400 rounded-t">
-                        <div className='relative flex flex-col w-full'>
-                            <h3 className="text-3xl font-bold text-black tracking-wider text-center">
+                    <div className="relative flex flex-row items-center py-28 bg-[#333]/80 rounded-t">
+                        <div className='flex flex-col w-full'>
+                            <h3 className="text-4xl font-bold text-blue-400 tracking-wider text-center">
                                 Public Decision Making Map System
                             </h3>
                             <h4 className='pt-2 font-semibold tracking-wider text-center'>
-                                Developed a digital map with backstage management for government users
+                                Introducing a digital map system GUI for government users
                             </h4>
                         </div>
                         <button
-                            className="p-1 ml-auto bg-transparent border-0 text-white text-3xl leading-none font-semibold outline-none focus:outline-none"
+                            className="absolute top-0 right-0 p-1 ml-auto bg-transparent border-0 text-white float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                             onClick={() => obj.setShowModal(false)}
                         >
-                            <span className="absolute bg-transparent text-white top-0 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                            <span className=" bg-transparent text-white h-6 w-6 text-3xl block outline-none focus:outline-none">
                                 ×
                             </span>
                         </button>
                     </div>
                     {/*body*/}
-                    <div className="relative p-8 flex items-center justify-center">
+                    <div className="relative pb-10 flex items-center justify-center -mt-16">
                         <Image
+                        className='rounded-lg'
                         src="/typhoon-overview.jpg"
                         loader={imageLoader}
                         width={704}
@@ -48,96 +51,128 @@ export default function ProjectModal(obj: Props) {
                         ></Image>
                     </div>
                     {/* overview */}
-                    <div>
-                        <h3 className='bg-[#f1d6a6] text-2xl border-t-black rounded-t-md text-[#006bad] text-left px-8 py-8 uppercase font-bold tracking-[0.3rem]'>Overview</h3>
-                        <h4 className='bg-slate-200 text-black font-semibold text-lg px-10 pt-6 pb-10 tracking-wider'>
-                        The system is a disaster control application for government. We introduce map object drawing as indication of disaster relief placement, typhoon history comparison and dashboards to review the statistics of all objects on map.
+                    <div className='px-20 py-16'>
+                        <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>Overview</h3>
+                        <h4 className='text-white text-lg pt-6 pb-10 tracking-wider'>
+                            <p>Public Decision Making Map System is a disaster control application for government.</p>
+                            <p>During my position as a Full-Stack Engineer at RiChi, I introduce <span className='projectSlideUnderlineText'>map object drawing</span> as indication of <span className='projectSlideHighlightText'>disaster relief placement</span>, <span className='projectSlideHighlightText'>typhoon history comparison</span> and <span className='projectSlideHighlightText'>dashboards</span> to review the statistics of all objects on map.</p>
                         </h4>
                     </div>
                     {/* problems */}
-                    <div>
-                        <h3 className='bg-[#f1d6a6] text-2xl border-t border-solid border-black rounded-t-md text-[#006bad] text-left -mt-2 px-8 py-8 uppercase font-bold tracking-[0.3rem]'>Problems</h3>
-                        <div className='bg-slate-200 text-black font-semibold text-lg px-8 py-6 tracking-wider'>
+                    <div className='px-20 py-16'>
+                        <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>User Problems</h3>
+                        <div className='text-white text-lg pt-6 pb-10 tracking-wider'>
                             <h4>Public Decision Making System involved multiple modules. For Typhoon History Dashboard, we deal with the following issues:</h4>
-                            <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-500 font-bold'>
-                                <li><span className='text-blue-500 font-bold underline underline-offset-2'>Dashboard Comparison</span>: Two typhoon traces on maps and statistics should show simultaneously.</li>
-                                <li><span className='text-blue-500 font-bold underline underline-offset-2'>Typhoon Timeline</span>: Two typhoons can be displayed in different time spot.</li>
-                                <li><span className='text-blue-500 font-bold underline underline-offset-2'>Dashboard Information Cards</span>: We need a bigger space for different types of detailed information to be displayed.</li>
+                            <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-400'>
+                                <li><span className='projectSlideHighlightText'>Dashboard Comparison</span>: Two typhoon must be selected first. Then both traces on maps and statistics should be showed simultaneously.</li>
+                                <li><span className='projectSlideHighlightText'>Typhoon Timeline</span>: Two typhoons can be displayed in different time spot independently.</li>
+                                <li><span className='projectSlideHighlightText'>Dashboard Information Cards</span>: We need a bigger space for different types of detailed information to be displayed.</li>
+                            </ul>
+                            <div className='flex flex-col'>
+                            {/* image: flow designed */}
+                                <figure className='flex flex-row justify-center py-4'>
+                                    <Image
+                                    src="/typhoon-prototype.png"
+                                    loader={imageLoader}
+                                    width={866}
+                                    height={257}
+                                    alt='typhoon-prototype'
+                                    ></Image>
+                                </figure>
+                                <caption className='flex flex-row text-center justify-center text-sm text-gray-300'>Typhoon dashboard initial prototype</caption>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='px-20 py-16'>
+                        <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>Project Meetings</h3>
+                        <div className='text-white font-semibold text-lg pt-6 pb-10 tracking-wider'>
+                            <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-400 font-bold'>
+                                <li>To understand opinions and requirements from the client, we participate meetings to <span className="projectSlideUnderlineText">synchronize our work progress and their feedbacks</span> periodically.</li>
+                                <li>Based on the design prototypes from UI/UX designers and project managers, I am responsible to <span className="projectSlideUnderlineText">review and suggest GUI adjustments</span> and estimate time consumption according to the requirements.</li>
+                                <li><span className="projectSlideUnderlineText">Technical researches</span> were conducted to ensure designs can be implemented.</li>
                             </ul>
                         </div>
                     </div>
-                    {/* solution */}
-                    <div>
-                        <h3 className='text-[#f1d6a6] text-2xl bg-[#006bad] text-center px-8 py-8 uppercase font-bold tracking-[0.3rem]'>What should I do?</h3>
-                        <h4 className='bg-[#f1d6a6] text-2xl text-[#006bad] text-left px-8 py-8 uppercase font-bold tracking-[0.3rem]'>Project Meetings</h4>
-                        <div className=' text-white font-semibold text-lg px-8 py-6 tracking-wider'>
-                            <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-500 font-bold text-blue-300'>
-                                <li>To understand opinions and requirements from the client, we participate meetings to synchronize our work progress and their feedbacks.</li>
-                                <li>Based on the design prototypes from UI/UX designers and project managers, I am responsible to review the consumption of time according to the requirements.</li>
-                                <li>Suggested better ideas to project managers about technical feasibilities.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 className='text-[#f1d6a6] text-2xl bg-[#006bad] text-center px-8 py-8 uppercase font-bold tracking-[0.3rem]'>What I have done.</h3>
-                        <h4 className='bg-[#f1d6a6] text-2xl text-[#006bad] text-left px-8 py-8 uppercase font-bold tracking-[0.3rem]'>Evaluate Feasibilities</h4>
-                        <div className=' text-white font-semibold text-lg px-8 py-6 tracking-wider'>
-                            <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-500 font-bold text-blue-300'>
-                                <li>Technical researches were conducted to ensure designs can be implemented.</li>
-                                <li>Rapidly develop the base functions and frameworks, for project managers and clients to review the big picture sooner as possible.</li>
-                            </ul>
-                        </div>
-                        <h4 className='bg-[#f1d6a6] text-2xl text-[#006bad] text-left px-8 py-8 uppercase font-bold tracking-[0.3rem]'>Development</h4>
-                        <div className=' text-white font-semibold text-lg px-8 py-6 tracking-wider'>
-                            <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-500 font-bold text-blue-300'>
-                                <li>Development phase involved full stack design and functional testing.</li>
-                                <li>Fix issues at testing environment according to QA tests.</li>
+                    <div className='px-20 py-16'>
+                        <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>Development</h3>
+                        <div className='text-white font-semibold text-lg pt-6 pb-10 tracking-wider'>
+                            <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-400 font-bold'>
+                                <li>My work involved in the development phase from <span className="projectSlideUnderlineText">frontend layout design</span>, <span className="projectSlideUnderlineText">backend login system</span>, <span className="projectSlideUnderlineText">database management</span> to <span className="projectSlideUnderlineText">functional testing</span>.</li>
+                                <li>Fix issues at testing environment as well as GUI rolling enhancement according to QA tests.</li>
                                 <li>Deploy to production environment for the client.</li>
                             </ul>
                         </div>
                     </div>
-                    <div>
-                        <h3 className='bg-[#f1d6a6] text-2xl border-t border-solid border-black rounded-t-md text-[#006bad] text-left -mt-2 px-8 py-8 uppercase font-bold tracking-[0.3rem]'>Solution / Final Design</h3>
-                        <div className='bg-slate-200 font-semibold text-lg px-8 py-6 tracking-wider'>
-                            <ul className='flex flex-col justify-center items-center list-disc pl-6 pt-4 space-y-8 text-black marker:text-blue-500 font-bold text-xl'>
-                                <p className='tracking-wider'>Problem 1: <span className='text-blue-400 underline'>Dashboard Comparison</span></p>
-                                <li>For the visual experience of 2 maps to compare side by side, we suggested to synchronize the same geological point whenever dragging.</li>
-                                {/* image: typhoon compare */}
+                    {/* final design */}
+                    <div className='px-20 py-16'>
+                        <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>final design</h3>
+                        <div className='text-white text-lg py-6 space-y-8 tracking-wider'>
+                            {/* <div className='flex flex-row py-4 justify-center'>
                                 <Image
-                                src="/typhoon-comp.png"
+                                src="/scale-out-final.png"
                                 loader={imageLoader}
                                 width={866}
                                 height={257}
-                                alt='typhoon-comp'
+                                alt='scale-out-final-design'
                                 ></Image>
-                                <div className='border border-b border-white w-[20vw] mx-auto'></div>
-                                
-                                <p className='tracking-wider'>Problem 2: <span className='text-blue-400 underline'>Asynchronous Timeline</span></p>
-                                <li>We consider timeline dragging are considered in a full map display operation, so added the timeline bar at the bottom of map. When information cards expand, the timeline bar would be covered.</li>
-                                <li>Two independent timeline bars are set on each typhoon maps.</li>
-                                {/* image: typhoon timeline */}
-                                <Image
-                                src="/typhoon-timeline.png"
-                                loader={imageLoader}
-                                width={800}
-                                height={430}
-                                alt='typhoon-timeline'
-                                ></Image>
-                                <div className='border border-b border-white w-[20vw] mx-auto'></div>
-
-                                <p className='tracking-wider'>Problem 3: <span className='text-blue-400 underline'>Massive amount of information cards</span></p>
-                                <li>I decided to divide cards into 3 categories according to its display style.</li>
-                                <li>Display of cards will also be mirrored to show 2 typhoon details.</li>
-                                <li>I introduced a “free dragging” expansion for cards section in order to customize the view height for different types of cards and usage scenarios.</li>
-                                {/* image: typhoon cards */}
-                                <Image
-                                src="/typhoon-card.png"
-                                loader={imageLoader}
-                                width={800}
-                                height={444}
-                                alt='typhoon-card'
-                                ></Image>
-                            </ul>
+                            </div> */}
+                            <div className='flex flex-col justify-start py-4 space-x-1 space-y-2 text-lg'>
+                                <p><span className='border-2 border-blue-400 text-blue-400 p-1'>1</span> <span className='projectSlideHighlightText'>Dashboard Comparison</span></p>
+                                <ul className='px-8 list-disc space-y-2'>
+                                    <li>Typhoon sections are divided into 2 sections all through the following flow.</li>
+                                    <li>For comparison purpose, <span className='projectSlideUnderlineText'>side-by-side</span> display for 2 maps is introduced.</li>
+                                    <div className='flex flex-col py-4 justify-center'>
+                                        <Image
+                                        src="/typhoon-comp.png"
+                                        loader={imageLoader}
+                                        width={866}
+                                        height={257}
+                                        alt='typhoon-comparison'
+                                        ></Image>
+                                        <caption className='flex flex-row text-center justify-center text-sm text-gray-300'>Typhoon comparison workflow & display style</caption>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div className='flex flex-col justify-start py-4 space-x-1 space-y-2 text-lg'>
+                                <p><span className='border-2 border-blue-400 text-blue-400 p-1'>2</span> <span className='projectSlideHighlightText'>Asynchronous Timeline</span></p>
+                                <ul className='px-8 list-disc space-y-2'>
+                                    <li><span className='projectSlideUnderlineText'>Two independent timeline bars</span> are set on each typhoon maps.</li>
+                                    <li>As timeline dragging is only considered necessary under full map view, I made it <span className='projectSlideUnderlineText'>at the bottom of the map</span>. Thus, if the card section expands, it will automatically covers the timeline section.</li>
+                                    <div className='flex flex-col py-4 justify-center'>
+                                        <Image
+                                        src="/typhoon-timeline.png"
+                                        loader={imageLoader}
+                                        width={866}
+                                        height={257}
+                                        alt='typhoon-timeline'
+                                        ></Image>
+                                        <caption className='flex flex-row text-center justify-center text-sm text-gray-300'>Independent timeline for 2 typhoons</caption>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div className='flex flex-col justify-start py-4 space-x-1 space-y-2 text-lg'>
+                            <p><span className='border-2 border-blue-400 text-blue-400 p-1'>3</span> <span className='projectSlideHighlightText'>Massive amount of information cards</span></p>
+                                <ul className='px-8 list-disc space-y-2'>
+                                    <li>Facing UX problems due to too many cards available to be viewed when testing, I decided to divide cards into 3 tabs according to their categories and display style.</li>
+                                    <ul className='list-decimal pl-6'>
+                                        <li><span className='p-1 text-semibold bg-[#333]/80 text-[rgb(86,162,171)]'>Information Cards</span>: 1 to 2 unit(s) wide, text-based context</li>
+                                        <li><span className='p-1 text-semibold bg-[#333]/80 text-[rgb(86,162,171)]'>Statistics Cards</span>: 4 units wide, graph-based context</li>
+                                        <li><span className='p-1 text-semibold bg-[#333]/80 text-[rgb(86,162,171)]'>Image Cards</span>: 4 units wide, image-based context</li>
+                                    </ul>
+                                    <li>Display of cards are mirrored according to 2 typhoons.</li>
+                                    <li><span className='projectSlideUnderlineText'>I developed a “free dragging” expansion</span> for cards section in order to customize the view height for different types of cards and usage scenarios.</li>
+                                    <div className='flex flex-col py-4 justify-center'>
+                                            <Image
+                                            src="/typhoon-card.png"
+                                            loader={imageLoader}
+                                            width={866}
+                                            height={257}
+                                            alt='typhoon-card'
+                                            ></Image>
+                                            <caption className='flex flex-row text-center justify-center text-sm text-gray-300'>Typhoon cards dynamic display section</caption>
+                                        </div>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     {/*footer*/}
@@ -146,6 +181,7 @@ export default function ProjectModal(obj: Props) {
                         onClick={() => obj.setShowModal(false)}>
                         close
                         </button>
+                    </div>
                     </div>
                 </div>
             </div>
