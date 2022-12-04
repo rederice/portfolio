@@ -27,7 +27,7 @@ export default function ProjectModal(obj: Props) {
                                 NAS Scale-Out Function Design
                             </h3>
                             <h4 className='pt-2 font-semibold tracking-wider text-center'>
-                                Introducing backstage management GUI for Storage Systems
+                                Introducing backstage management GUI for Storage Systems Administrators
                             </h4>
                         </div>
                         <button

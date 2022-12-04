@@ -14,4 +14,16 @@
     .projectSlideUnderlineText {
         @apply decoration-blue-400 underline underline-offset-4 decoration-2
     }
+    table {
+        @apply text-center table-fixed break-words
+    }
+    thead {
+        @apply bg-slate-500
+    }
+    tbody {
+        @apply bg-slate-800
+    }
+    td {
+        @apply h-auto p-2 break-words
+    }
 }

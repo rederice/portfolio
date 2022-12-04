@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import React,{Component, useEffect, useState} from 'react'
 import ProjectModal1 from './ProjectModal1'
 import ProjectModal2 from './ProjectModal2'
+import ProjectModal3 from './ProjectModal3'
 
 type Props = {obj: any}
 
@@ -47,6 +48,7 @@ export default function ProjectSlides({obj}: Props) {
             </motion.article>
             <div>{showModal && obj.num === 1 ? (<ProjectModal1 setShowModal={setShowModal}/>): null}</div>
             <div>{showModal && obj.num === 2 ? (<ProjectModal2 setShowModal={setShowModal}/>): null}</div>
+            <div>{showModal && obj.num === 3 ? (<ProjectModal3 setShowModal={setShowModal}/>): null}</div>
         </>
     )
 }

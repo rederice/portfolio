@@ -107,15 +107,6 @@ export default function ProjectModal(obj: Props) {
                     <div className='px-20 py-16'>
                         <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>final design</h3>
                         <div className='text-white text-lg py-6 space-y-8 tracking-wider'>
-                            {/* <div className='flex flex-row py-4 justify-center'>
-                                <Image
-                                src="/scale-out-final.png"
-                                loader={imageLoader}
-                                width={866}
-                                height={257}
-                                alt='scale-out-final-design'
-                                ></Image>
-                            </div> */}
                             <div className='flex flex-col justify-start py-4 space-x-1 space-y-2 text-lg'>
                                 <p><span className='border-2 border-blue-400 text-blue-400 p-1'>1</span> <span className='projectSlideHighlightText'>Dashboard Comparison</span></p>
                                 <ul className='px-8 list-disc space-y-2'>
@@ -153,13 +144,13 @@ export default function ProjectModal(obj: Props) {
                             <div className='flex flex-col justify-start py-4 space-x-1 space-y-2 text-lg'>
                             <p><span className='border-2 border-blue-400 text-blue-400 p-1'>3</span> <span className='projectSlideHighlightText'>Massive amount of information cards</span></p>
                                 <ul className='px-8 list-disc space-y-2'>
-                                    <li>Facing UX problems due to too many cards available to be viewed when testing, I decided to divide cards into 3 tabs according to their categories and display style.</li>
-                                    <ul className='list-decimal pl-6'>
+                                    <li>Facing UX problems due to too many cards available to be viewed when testing, I decided to <span className='projectSlideUnderlineText'>divide cards into 3 tabs</span> according to their categories and display style.</li>
+                                    <ul className='list-decimal pl-6 space-y-2'>
                                         <li><span className='p-1 text-semibold bg-[#333]/80 text-[rgb(86,162,171)]'>Information Cards</span>: 1 to 2 unit(s) wide, text-based context</li>
                                         <li><span className='p-1 text-semibold bg-[#333]/80 text-[rgb(86,162,171)]'>Statistics Cards</span>: 4 units wide, graph-based context</li>
                                         <li><span className='p-1 text-semibold bg-[#333]/80 text-[rgb(86,162,171)]'>Image Cards</span>: 4 units wide, image-based context</li>
                                     </ul>
-                                    <li>Display of cards are mirrored according to 2 typhoons.</li>
+                                    <li>Display of cards are <span className='projectSlideUnderlineText'>mirrored</span> according to 2 typhoons.</li>
                                     <li><span className='projectSlideUnderlineText'>I developed a “free dragging” expansion</span> for cards section in order to customize the view height for different types of cards and usage scenarios.</li>
                                     <div className='flex flex-col py-4 justify-center'>
                                             <Image
