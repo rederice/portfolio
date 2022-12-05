@@ -37,7 +37,7 @@ export default function Hero({}: Props) {
 
             <div className='flex flex-row justify-center space-x-2 pt-5'>
                 <Link href="#projects"><button className='heroButton'>Projects</button></Link>                
-                <Link href="#resume"><button className='heroButton'>About</button></Link>
+                <Link href="#about"><button className='heroButton'>About</button></Link>
             </div>
         </div>
     </div>

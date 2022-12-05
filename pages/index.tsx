@@ -10,8 +10,8 @@ export default function Home() {
     <div className='bg-[rgb(36,36,36)] text-white h-screen 
     snap-y snap-mandatory overflow-scroll z-0'>
       <Head>
-        <meta property="og:image" content={`${process.env.NEXT_PUBLIC_BASE_PATH}/favicon.ico`}></meta>
-        <link rel="icon" href={`${process.env.NEXT_PUBLIC_BASE_PATH}/favicon.ico`}></link>
+        <meta property="og:image" content="/portfolio/favicon.ico"></meta>
+        <link rel="icon" href="/portfolio/favicon.ico"></link>
         <title>Hung-Fang&apos;s Portfolio</title>
       </Head>
 
@@ -28,8 +28,8 @@ export default function Home() {
         <Projects />
       </section>
       
-      {/* Resume */}
-      <section id="resume" className='snap-center'>
+      {/* About */}
+      <section id="about" className='snap-center'>
         <About />
       </section>
     </div>

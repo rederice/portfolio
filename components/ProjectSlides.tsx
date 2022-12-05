@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import React,{Component, useEffect, useState} from 'react'
+import React from 'react'
 import ProjectModal1 from './ProjectModal1'
 import ProjectModal2 from './ProjectModal2'
 import ProjectModal3 from './ProjectModal3'

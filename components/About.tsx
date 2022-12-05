@@ -23,7 +23,7 @@ export default function About({}: Props) {
             whileInView={{opacity: 1}}
             viewport={{once: true}}
             className="absolute w-[500px] md:w-[700px] xl:w-[800px] justify-center mx-auto"
-            src="portfolio/coord.png"
+            src="/portfolio/coord.png"
             ></motion.img>
         </div>
     </motion.div>
