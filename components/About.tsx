@@ -15,14 +15,14 @@ export default function About({}: Props) {
             About
         </h3>
 
-        <div className='flex pt-24 space-x-5 w-[500px] md:w-[700px] xl:w-[800px] items-center
-        snap-x snap-mandatory h-[60%]'>
+        <div className='flex pt-24 space-x-5 w-[350px] md:w-[700px] xl:w-[800px] items-center
+        snap-x snap-mandatory h-[60%] mx-auto'>
           <motion.img
             initial={{opacity: 0,}}
             transition={{duration: 1.2}}
             whileInView={{opacity: 1}}
             viewport={{once: true}}
-            className="absolute w-[500px] md:w-[700px] xl:w-[800px] justify-center mx-auto"
+            className="absolute w-[350px] md:w-[700px] xl:w-[800px] justify-center mx-auto"
             src="/portfolio/coord.png"
             ></motion.img>
         </div>
