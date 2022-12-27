@@ -53,9 +53,9 @@ export default function ProjectModal(obj: Props) {
                     {/* overview */}
                     <div className='px-20 py-16'>
                         <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>Overview</h3>
-                        <h4 className='text-white text-lg pt-6 pb-10 tracking-wider'>
-                            <p><span className='projectSlideUnderlineText'>Short paper published on The World Wide Web Conference, May 2019.</span> <a href="https://dl.acm.org/doi/fullHtml/10.1145/3308558.3313645" className='text-slate-400'>[Publication link]</a></p>
-                            <p>During my special research project, I and my teamates scanned through G7 government top 100 websites. We used the data to analyze three major cyber autonomy indicators:                                <span className='projectSlideHighlightText'>HTTPS</span>, <span className='projectSlideHighlightText'>Certificate Authority</span> and <span className='projectSlideHighlightText'>Content Provider</span>.</p>
+                        <h4 className='text-white text-lg pt-6 pb-10 tracking-wider space-y-2'>
+                            <p><span className='projectSlideUnderlineText'>A short paper published at The World Wide Web Conference, May 2019.</span> <a href="https://dl.acm.org/doi/fullHtml/10.1145/3308558.3313645" className='text-slate-400'>[Publication link]</a></p>
+                            <p>During my special research project, I and my teammates scanned through the G7 government&apos;s top 100 websites. We used the data to analyze three major cyber autonomy indicators:                                <span className='projectSlideHighlightText'>HTTPS</span>, <span className='projectSlideHighlightText'>Certificate Authority</span> and <span className='projectSlideHighlightText'>Content Provider</span>.</p>
                             <p>We further went to San Francisco, California to demonstrate our work. I was also responsible for the oral presentation at the scene.</p>
                             <figure className='flex flex-row justify-center py-4'>
                                 <Image
@@ -74,12 +74,12 @@ export default function ProjectModal(obj: Props) {
                         <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>Research Problems</h3>
                         <div className='flex flex-row flex-wrap pt-6 pb-10'>
                             <div className='flex flex-col text-white text-lg tracking-wider lg:max-w-[50%] md:max-w-[100%]'>
-                                <h4>Cyber autonomy is crucial to reduce the reliance on external entities. Public-facing government websites indicate <span className='projectSlideUnderlineText'>the degree of government&apos;s autonomy policy</span>. With the website data we crawled, following investigations should be conducted to further analyze the dependencies.</h4>
+                                <h4>Cyber autonomy is crucial to reduce reliance on external entities. Public-facing government websites indicate <span className='projectSlideUnderlineText'>the degree of the government&apos;s autonomy policy</span>. With the website data we crawled, the following investigations should be conducted to further analyze the dependencies.</h4>
                                 <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-400'>
                                     <li><span className='projectSlideHighlightText'>HTTPS/HSTS</span>: Whether a website adopts HTTPS protocol and HSTS mechanism is a strong cyber security protection indicator.</li>
                                     <li><span className='projectSlideHighlightText'>TLS Vulnerabilities (Weakness)</span>: A detailed top 11 cyber attacks vulnerabilities result reveals the maintenance quality of these sites.</li>
-                                    <li><span className='projectSlideHighlightText'>Root Certificate Authority (Root CA)</span>: With those websites already adopted HTTPS, analyzing the institutions who issued their certificate brings out autonomy aspect of nations.</li>
-                                    <li><span className='projectSlideHighlightText'>Content Provider (CP)</span>: The most important factor about autonomy, which we geologically positioned the server storing these website data.</li>
+                                    <li><span className='projectSlideHighlightText'>Root Certificate Authority (Root CA)</span>: With those websites already adopted HTTPS, analyzing the institutions who issued their certificate brings out the autonomy aspect of nations.</li>
+                                    <li><span className='projectSlideHighlightText'>Content Provider (CP)</span>: The most important factor about autonomy, that we geologically positioned the server storing these website data.</li>
                                 </ul>
                             </div>
                             <div className='flex flex-col pl-4 lg:max-w-[50%] md:max-w-[100%] mx-auto'>
@@ -102,8 +102,8 @@ export default function ProjectModal(obj: Props) {
                         <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>Technical investigation & survey</h3>
                         <div className='text-white font-semibold text-lg pt-6 pb-10 tracking-wider'>
                             <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-400 font-bold'>
-                                <li><span className='projectSlideHighlightText'>Scan & Crawl</span>: We used crawling techniques to collect top 100 viewed government websites overed 8 countries. Thereafter, we scanned over the 800 sites to detect their environment settings.</li>
-                                <li><span className='projectSlideHighlightText'>Analyze</span>: I integrated all research data into different chart styles for comparison purpose in demonstration and further analysis.</li>
+                                <li><span className='projectSlideHighlightText'>Scan & Crawl</span>: We used crawling techniques to collect the top 100 viewed government websites over 8 countries. Thereafter, we scanned over 800 sites to detect their environmental settings.</li>
+                                <li><span className='projectSlideHighlightText'>Analyze</span>: I integrated all research data into different chart styles for comparison purposes in demonstration and further analysis.</li>
                                 <table className='w-full'>
                                     <thead>
                                         <tr className='bg-blue-400/80'>
@@ -135,8 +135,8 @@ export default function ProjectModal(obj: Props) {
                                     </tbody>
                                 </table>
 
-                                <li><span className='projectSlideHighlightText'>Survey & Research</span>: Our team distributed questionaire directly to Taiwanese government institutions as well as search for G7 government mandates documents.</li>
-                                <li><span className='projectSlideHighlightText'>Draw conclusion</span>: We combine technical research with humanities studies to find out autonomy tendencies among G7 and the potential crisis of the ignorance!</li>
+                                <li><span className='projectSlideHighlightText'>Survey & Research</span>: Our team distributed questionnaires directly to Taiwanese government institutions as well as searched for G7 government mandates documents.</li>
+                                <li><span className='projectSlideHighlightText'>Draw the conclusion</span>: We combine technical research with humanities studies to find out autonomy tendencies among G7 and the potential crisis of ignorance!</li>
                             </ul>
                         </div>
                     </div>
@@ -147,7 +147,7 @@ export default function ProjectModal(obj: Props) {
                             <div className='flex flex-col justify-start py-4 space-x-1 space-y-2 text-lg'>
                                 <p><span className='border-2 border-blue-400 text-blue-400 p-1'>1</span> <span className='projectSlideHighlightText'>Bar charts</span></p>
                                 <ul className='px-8 list-disc space-y-2'>
-                                    <li>For comparison of adoption percentage among G7 countries, <span className='projectSlideUnderlineText'>bar charts are best to display the overview</span>.</li>
+                                    <li>For comparison of adoption percentages among G7 countries, <span className='projectSlideUnderlineText'>bar charts are best to display the overview</span>.</li>
                                     <div className='flex flex-col py-4 justify-center'>
                                         <Image
                                         src="/autonomy-bar.jpg"
@@ -158,7 +158,7 @@ export default function ProjectModal(obj: Props) {
                                         ></Image>
                                         <caption className='flex flex-row text-center justify-center text-sm text-gray-300'>Bar chart for most overall comparison</caption>
                                     </div>
-                                    <li>Each independent <span className='projectSlideUnderlineText'>bar is clickable</span>, and the according websites will be showed.</li>
+                                    <li>Each independent <span className='projectSlideUnderlineText'>bar is clickable</span>, and the according websites will be shown.</li>
                                     <div className='flex flex-col py-4 justify-center'>
                                         <Image
                                         src="/autonomy-website-list.jpg"
@@ -174,7 +174,7 @@ export default function ProjectModal(obj: Props) {
                             <div className='flex flex-col justify-start py-4 space-x-1 space-y-2 text-lg'>
                                 <p><span className='border-2 border-blue-400 text-blue-400 p-1'>2</span> <span className='projectSlideHighlightText'>Line Charts</span></p>
                                 <ul className='px-8 list-disc space-y-2'>
-                                    <li>Chose specifically for TLS vulnerabilities overall comparison section. Due to <span className='projectSlideUnderlineText'>11 categories of attacks</span> in each countries, I need <span className='projectSlideUnderlineText'>one more dimension for data display</span> rather than bar chart.</li>
+                                    <li>Chose specifically for TLS vulnerabilities overall comparison section. Due to the <span className='projectSlideUnderlineText'>11 categories of attacks</span> in each country, I need <span className='projectSlideUnderlineText'>one more dimension for data display</span> rather than a bar chart.</li>
                                     <div className='flex flex-col py-4 justify-center'>
                                         <Image
                                         src="/autonomy-line.jpg"
@@ -218,7 +218,7 @@ export default function ProjectModal(obj: Props) {
                             <p><span className='border-2 border-blue-400 text-blue-400 p-1'>4</span> <span className='projectSlideHighlightText'>Poster Design</span></p>
                                 <ul className='px-8 list-disc space-y-2'>
                                     <li>I further attended Annual CSIE Project Research Exhibition. My team won both Appier Inc. and QNAP Systems Inc excellence awards.</li>
-                                    <li>Besides demo website, I also designed the poster for the exhibition.</li>
+                                    <li>Besides the demo website, I also designed the poster for the exhibition.</li>
                                     <div className='flex flex-col py-4 justify-center'>
                                         <Image
                                         className='border-2 border-blue-400'

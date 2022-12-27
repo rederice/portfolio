@@ -52,9 +52,9 @@ export default function ProjectModal(obj: Props) {
                     {/* overview */}
                     <div className='px-20 py-16'>
                         <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>Overview</h3>
-                        <h4 className='text-white text-lg pt-6 pb-10 tracking-wider'>
+                        <h4 className='text-white text-lg pt-6 pb-10 tracking-wider space-y-2'>
                             <p>GS series are united storage systems. International corporations use NAS/SAN services for data storage.</p>
-                            <p>During my tenure as a Project Manager at Infortrend, one design I worked on was an extension, <span className='projectSlideHighlightText'>GS Scale-Out System</span>.</p>
+                            <p>During my tenure as a Project Manager at Infortrend, one design I worked on was an extension of, <span className='projectSlideHighlightText'>GS Scale-Out System</span>.</p>
                             <p>This project introduces <span className='projectSlideUnderlineText'>a whole new structure of file systems integration</span> over the world and aims to be <span className='projectSlideUnderlineText'>user-friendly for system administrators</span>.</p>
                         </h4>
                     </div>
@@ -62,11 +62,11 @@ export default function ProjectModal(obj: Props) {
                     <div className='px-20 py-16'>
                         <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>User Problems</h3>
                         <div className='text-white text-lg pt-6 pb-10 tracking-wider'>
-                            <h4>The GS Scale-Out function connects multiple existed file systems into an integrated one. Based on the origin single system UI/UX, I faced following function design challenges:</h4>
+                            <h4>The GS Scale-Out function connects multiple existing file systems into an integrated one. Based on the origin single system UI/UX, I faced the following function design challenges:</h4>
                             <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-400'>
-                                <li><span className='projectSlideHighlightText'>File Explorer</span>: Integration between different systems should be expected on new GUI.</li>
+                                <li><span className='projectSlideHighlightText'>File Explorer</span>: Integration between different systems should be expected on the new GUI.</li>
                                 <li><span className='projectSlideHighlightText'>File Migration</span>: Files can be transferred among systems on demand. We need a user-friendly visualization for administrators&apos; surveillance.</li>
-                                <li><span className='projectSlideHighlightText'>Master/Slave Device Interfaces</span>: Administrators should be able to check detailed status on all devices after integration.</li>
+                                <li><span className='projectSlideHighlightText'>Master/Slave Device Interfaces</span>: Administrators should be able to check the detailed status of all devices after integration.</li>
                             </ul>
                             <div className='flex flex-col'>
                             {/* image: flow designed */}
@@ -88,8 +88,8 @@ export default function ProjectModal(obj: Props) {
                         <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>Competitive Research</h3>
                         <div className='text-white font-semibold text-lg pt-6 pb-10 tracking-wider'>
                             <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-400 font-bold'>
-                                <li>Unlike traditional scale-out NAS structure, which the file system integration is done once deployed initially, our product features <span className='projectSlideUnderlineText'>live integration</span> as an extension for several file systems to connect with each.</li>
-                                <li>Based on the similarity with NetApp, Dell EMC, HPE NAS scale-out products, I adopted the ideas of <span className='projectSlideUnderlineText'>File Explorer integration</span> showcase.</li>
+                                <li>Unlike the traditional scale-out NAS structure, in which the file system integration is done once deployed initially, our product features <span className='projectSlideUnderlineText'>live integration</span> as an extension for several file systems to connect with each.</li>
+                                <li>Based on the similarity with NetApp, Dell EMC, HPE NAS scale-out products, I adopted the idea of a <span className='projectSlideUnderlineText'>File Explorer integration</span> showcase.</li>
                                 <li>Moreover, live extension and file migration functions should be <span className='projectSlideUnderlineText'>displayed dynamically</span> with <span className='projectSlideUnderlineText'>more sensitive information</span> to users.</li>
                             </ul>
                         </div>
@@ -99,7 +99,7 @@ export default function ProjectModal(obj: Props) {
                         <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>Feasibility Studies</h3>
                         <div className='text-white text-lg pt-6 pb-10 tracking-wider'>
                             <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-400'>
-                                <li><span className='projectSlideUnderlineText'>Technical researches</span> were conducted with firmware engineers to ensure our functions, and further plan for <span className='projectSlideUnderlineText'>overall flows</span> of live integration.</li>
+                                <li><span className='projectSlideUnderlineText'>Technical research</span> was conducted with firmware engineers to ensure our functions, and further plan for <span className='projectSlideUnderlineText'>overall flows</span> of live integration.</li>
                                 <div className='flex flex-col py-4'>
                                 {/* image: flow designed */}
                                     <figure className='flex flex-row justify-center py-4'>
@@ -114,7 +114,7 @@ export default function ProjectModal(obj: Props) {
                                     <caption className='flex flex-row text-center justify-center text-sm text-gray-300'>Flow chart preview</caption>
                                 </div>
                                 <li>Product Specs were written(C0 documents) to include complete <span className='projectSlideUnderlineText'>function listing</span> as well as <span className='projectSlideUnderlineText'>static prototypes</span>.</li>
-                                <li>Deep discussion meetings were held continuously with UI/UX designer and CEO, for the <span className='projectSlideUnderlineText'>review of GUI prototypes</span> in comprehensive aspects.</li>
+                                <li>Deep discussion meetings were held continuously with UI/UX designer and CEO, to <span className='projectSlideUnderlineText'>review GUI prototypes</span> in comprehensive aspects.</li>
                             </ul>
                             <div className='flex flex-col py-4'>
                             {/* image: flow designed */}
@@ -147,7 +147,7 @@ export default function ProjectModal(obj: Props) {
                             <div className='flex flex-col justify-start py-4 space-x-1 space-y-2 text-lg'>
                                 <p><span className='border-2 border-blue-400 text-blue-400 p-1'>1</span> <span className='projectSlideHighlightText'>File Explorer</span></p>
                                 <ul className='px-8 list-disc space-y-2'>
-                                    <li>In administration panel, we adopted <span className='projectSlideUnderlineText'>expandable layered structure</span>.</li>
+                                    <li>In the administration panel, we adopted an <span className='projectSlideUnderlineText'>expandable layered structure</span>.</li>
                                     <div className='flex flex-col py-4 justify-center'>
                                         <Image
                                         src="/scale-out-tree.png"
@@ -158,7 +158,7 @@ export default function ProjectModal(obj: Props) {
                                         ></Image>
                                         <caption className='flex flex-row text-center justify-center text-sm text-gray-300'>Tree structure</caption>
                                     </div>
-                                    <li>UI/UX consists with renowned OS explorers and original GS products.</li>
+                                    <li>UI/UX is consistent with renowned OS explorers and original GS products.</li>
                                     <div className='flex flex-col py-4 justify-center'>
                                         <Image
                                         src="/scale-out-style.png"
@@ -185,7 +185,7 @@ export default function ProjectModal(obj: Props) {
                                         ></Image>
                                         <caption className='flex flex-row text-center justify-center text-sm text-gray-300'>Migration tasks creation popup</caption>
                                     </div>
-                                    <li>For administrator monitoring, migration tasks can be managed in <span className='projectSlideUnderlineText'>another tab</span> independently. We adopted table view for centralized display.</li>
+                                    <li>For administrator monitoring, migration tasks can be managed in <span className='projectSlideUnderlineText'>another tab</span> independently. We adopted a table view for centralized display.</li>
                                     <div className='flex flex-col py-4 justify-center'>
                                         <Image
                                         src="/scale-out-migration-tab.png"
@@ -201,7 +201,7 @@ export default function ProjectModal(obj: Props) {
                             <div className='flex flex-col justify-start py-4 space-x-1 space-y-2 text-lg'>
                             <p><span className='border-2 border-blue-400 text-blue-400 p-1'>3</span> <span className='projectSlideHighlightText'>Master/Slave Device Interfaces</span></p>
                                 <ul className='px-8 list-disc space-y-2'>
-                                    <li>On the dashboard, we added device quick switch <span className='projectSlideUnderlineText'>dropdown</span>.</li>
+                                    <li>On the dashboard, we added a device quick switch <span className='projectSlideUnderlineText'>dropdown</span>.</li>
                                     <li>Independent devices can be displayed as <span className='projectSlideUnderlineText'>cards</span> for status overview.</li>
                                     <div className='flex flex-col py-4 justify-center'>
                                         <Image

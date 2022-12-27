@@ -53,9 +53,9 @@ export default function ProjectModal(obj: Props) {
                     {/* overview */}
                     <div className='px-20 py-16'>
                         <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>Overview</h3>
-                        <h4 className='text-white text-lg pt-6 pb-10 tracking-wider'>
-                            <p>Public Decision Making Map System is a disaster control application for government.</p>
-                            <p>During my position as a Full-Stack Engineer at RiChi, I introduce <span className='projectSlideUnderlineText'>map object drawing</span> as indication of <span className='projectSlideHighlightText'>disaster relief placement</span>, <span className='projectSlideHighlightText'>typhoon history comparison</span> and <span className='projectSlideHighlightText'>dashboards</span> to review the statistics of all objects on map.</p>
+                        <h4 className='text-white text-lg pt-6 pb-10 tracking-wider space-y-2'>
+                            <p>Public Decision Making Map System is a disaster control application for the government.</p>
+                            <p>During my position as a Full-Stack Engineer at RiChi, I introduce <span className='projectSlideUnderlineText'>map object drawing</span> as an indication of <span className='projectSlideHighlightText'>disaster relief placement</span>, <span className='projectSlideHighlightText'>typhoon history comparison</span>, and <span className='projectSlideHighlightText'>dashboards</span> to review the statistics of all objects on the map.</p>
                         </h4>
                     </div>
                     {/* problems */}
@@ -64,8 +64,8 @@ export default function ProjectModal(obj: Props) {
                         <div className='text-white text-lg pt-6 pb-10 tracking-wider'>
                             <h4>Public Decision Making System involved multiple modules. For Typhoon History Dashboard, we deal with the following issues:</h4>
                             <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-400'>
-                                <li><span className='projectSlideHighlightText'>Dashboard Comparison</span>: Two typhoon must be selected first. Then both traces on maps and statistics should be showed simultaneously.</li>
-                                <li><span className='projectSlideHighlightText'>Typhoon Timeline</span>: Two typhoons can be displayed in different time spot independently.</li>
+                                <li><span className='projectSlideHighlightText'>Dashboard Comparison</span>: Two typhoons must be selected first. Then both traces on maps and statistics should be shown simultaneously.</li>
+                                <li><span className='projectSlideHighlightText'>Typhoon Timeline</span>: Two typhoons can be displayed in different time spots independently.</li>
                                 <li><span className='projectSlideHighlightText'>Dashboard Information Cards</span>: We need a bigger space for different types of detailed information to be displayed.</li>
                             </ul>
                             <div className='flex flex-col'>
@@ -87,9 +87,9 @@ export default function ProjectModal(obj: Props) {
                         <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>Project Meetings</h3>
                         <div className='text-white font-semibold text-lg pt-6 pb-10 tracking-wider'>
                             <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-400 font-bold'>
-                                <li>To understand opinions and requirements from the client, we participate meetings to <span className="projectSlideUnderlineText">synchronize our work progress and their feedbacks</span> periodically.</li>
+                                <li>To understand the opinions and requirements of the client, we participate in meetings to <span className="projectSlideUnderlineText">synchronize our work progress and their feedback</span> periodically.</li>
                                 <li>Based on the design prototypes from UI/UX designers and project managers, I am responsible to <span className="projectSlideUnderlineText">review and suggest GUI adjustments</span> and estimate time consumption according to the requirements.</li>
-                                <li><span className="projectSlideUnderlineText">Technical researches</span> were conducted to ensure designs can be implemented.</li>
+                                <li><span className="projectSlideUnderlineText">Technical research</span> was conducted to ensure designs can be implemented.</li>
                             </ul>
                         </div>
                     </div>
@@ -97,9 +97,9 @@ export default function ProjectModal(obj: Props) {
                         <h3 className='text-2xl text-white py-8 uppercase font-bold tracking-[0.3rem]'>Development</h3>
                         <div className='text-white font-semibold text-lg pt-6 pb-10 tracking-wider'>
                             <ul className='list-decimal pl-6 py-4 space-y-4 marker:text-blue-400 font-bold'>
-                                <li>My work involved in the development phase from <span className="projectSlideUnderlineText">frontend layout design</span>, <span className="projectSlideUnderlineText">backend login system</span>, <span className="projectSlideUnderlineText">database management</span> to <span className="projectSlideUnderlineText">functional testing</span>.</li>
-                                <li>Fix issues at testing environment as well as GUI rolling enhancement according to QA tests.</li>
-                                <li>Deploy to production environment for the client.</li>
+                                <li>My work involved the development phase from <span className="projectSlideUnderlineText">frontend layout design</span>, <span className="projectSlideUnderlineText">backend login system</span>, and <span className="projectSlideUnderlineText">database management</span> to <span className="projectSlideUnderlineText">functional testing</span>.</li>
+                                <li>Fix issues at the testing environment as well as GUI rolling enhancement according to QA tests.</li>
+                                <li>Deploy to the production environment for the client.</li>
                             </ul>
                         </div>
                     </div>
@@ -111,7 +111,7 @@ export default function ProjectModal(obj: Props) {
                                 <p><span className='border-2 border-blue-400 text-blue-400 p-1'>1</span> <span className='projectSlideHighlightText'>Dashboard Comparison</span></p>
                                 <ul className='px-8 list-disc space-y-2'>
                                     <li>Typhoon sections are divided into 2 sections all through the following flow.</li>
-                                    <li>For comparison purpose, <span className='projectSlideUnderlineText'>side-by-side</span> display for 2 maps is introduced.</li>
+                                    <li>For comparison purposes, a <span className='projectSlideUnderlineText'>side-by-side</span> display for 2 maps is introduced.</li>
                                     <div className='flex flex-col py-4 justify-center'>
                                         <Image
                                         src="/typhoon-comp.png"
@@ -127,8 +127,8 @@ export default function ProjectModal(obj: Props) {
                             <div className='flex flex-col justify-start py-4 space-x-1 space-y-2 text-lg'>
                                 <p><span className='border-2 border-blue-400 text-blue-400 p-1'>2</span> <span className='projectSlideHighlightText'>Asynchronous Timeline</span></p>
                                 <ul className='px-8 list-disc space-y-2'>
-                                    <li><span className='projectSlideUnderlineText'>Two independent timeline bars</span> are set on each typhoon maps.</li>
-                                    <li>As timeline dragging is only considered necessary under full map view, I made it <span className='projectSlideUnderlineText'>at the bottom of the map</span>. Thus, if the card section expands, it will automatically covers the timeline section.</li>
+                                    <li><span className='projectSlideUnderlineText'>Two independent timeline bars</span> are set on each typhoon map.</li>
+                                    <li>As timeline dragging is only considered necessary under full map view, I made it <span className='projectSlideUnderlineText'>at the bottom of the map</span>. Thus, if the card section expands, it automatically covers the timeline section.</li>
                                     <div className='flex flex-col py-4 justify-center'>
                                         <Image
                                         src="/typhoon-timeline.png"
@@ -142,7 +142,7 @@ export default function ProjectModal(obj: Props) {
                                 </ul>
                             </div>
                             <div className='flex flex-col justify-start py-4 space-x-1 space-y-2 text-lg'>
-                            <p><span className='border-2 border-blue-400 text-blue-400 p-1'>3</span> <span className='projectSlideHighlightText'>Massive amount of information cards</span></p>
+                            <p><span className='border-2 border-blue-400 text-blue-400 p-1'>3</span> <span className='projectSlideHighlightText'>Massive amounts of information cards</span></p>
                                 <ul className='px-8 list-disc space-y-2'>
                                     <li>Facing UX problems due to too many cards available to be viewed when testing, I decided to <span className='projectSlideUnderlineText'>divide cards into 3 tabs</span> according to their categories and display style.</li>
                                     <ul className='list-decimal pl-6 space-y-2'>
@@ -150,8 +150,8 @@ export default function ProjectModal(obj: Props) {
                                         <li><span className='p-1 text-semibold bg-[#333]/80 text-[rgb(86,162,171)]'>Statistics Cards</span>: 4 units wide, graph-based context</li>
                                         <li><span className='p-1 text-semibold bg-[#333]/80 text-[rgb(86,162,171)]'>Image Cards</span>: 4 units wide, image-based context</li>
                                     </ul>
-                                    <li>Display of cards are <span className='projectSlideUnderlineText'>mirrored</span> according to 2 typhoons.</li>
-                                    <li><span className='projectSlideUnderlineText'>I developed a “free dragging” expansion</span> for cards section in order to customize the view height for different types of cards and usage scenarios.</li>
+                                    <li>Display of cards is <span className='projectSlideUnderlineText'>mirrored</span> according to 2 typhoons.</li>
+                                    <li><span className='projectSlideUnderlineText'>I developed a “free dragging” expansion</span> for the cards section in order to customize the view height for different types of cards and usage scenarios.</li>
                                     <div className='flex flex-col py-4 justify-center'>
                                             <Image
                                             src="/typhoon-card.png"

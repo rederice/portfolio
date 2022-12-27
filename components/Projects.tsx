@@ -20,7 +20,7 @@ export default function Projects({}: Props) {
         projectTitle: "Full Stack Engineer, RiChi Technology Inc.",
         projectTags: ["Front-end Design"],
         projectAttrs: ["Company", "2021", "2020"],
-        projectIntro: "Developed a fancy digital map operation and dashboard GUI for government users"
+        projectIntro: "Developing a fancy digital map operation and dashboard GUI for government users"
     },{
         num: 3,
         projectAvatar: "/portfolio/nslab.jpg",
@@ -31,12 +31,20 @@ export default function Projects({}: Props) {
         projectIntro: "Two-year scale analysis with data mining on G7 government websites cyber autonomy issues"
     },{
         num: 4,
+        projectAvatar: "/portfolio/oop.jpg",
+        projectName: "Taiwan High Speed Rail Booking System",
+        projectTitle: "Final Project, Object-oriented Analysis and Design Course",
+        projectTags: ["Front-end Design", "Presentation"],
+        projectAttrs: ["Course", "2019"],
+        projectIntro: "A simulated booking system of THSR to demonstrate object-oriented programming using software engineering techniques"
+    },{
+        num: 5,
         projectAvatar: "/portfolio/nchc.jpg",
         projectName: "Certificate Verification System on Blockchain",
         projectTitle: "Internship, National Center for High-performance Computing",
         projectTags: ["Tech research", "Presentation"],
         projectAttrs: ["Company", "2017"],
-        projectIntro: "Introduced a verifiable system for schools to upload certificates onto Ethereum smart contracts"
+        projectIntro: "Introducing a verifiable system for schools to upload certificates onto Ethereum smart contracts"
     }]
 
     return (

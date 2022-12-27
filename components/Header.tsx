@@ -23,9 +23,9 @@ export default function Header({}: Props) {
             duration: 1.5
         }}
         className='flex flex-row items-center'>
-            <p className='font-extrabold text-yellow-300 font-sans tracking-wider cursor-pointer'>
+            <a href="#hero" className='font-extrabold text-yellow-300 font-sans tracking-wider cursor-pointer'>
                 HUNG-FANG&apos;s PORTFOLIO
-            </p>
+            </a>
         </motion.div>
 
         <motion.div         
@@ -42,17 +42,19 @@ export default function Header({}: Props) {
         transition={{
             duration: 1.5
         }}
-        className='flex flex-row items-center text-blue-400 cursor-pointer'>
-            <Image 
-            className='p-1'
-            src="/email_blue.png" 
-            loader={imageLoader}
-            width={30}
-            height={30}
-            alt="email" />
-            <p className='uppercase hidden md:inline-flex text-sm'>
-                Get In Touch
-            </p>
+        className='flex flex-row items-center text-blue-400 font-bold cursor-pointer space-x-6'>
+            <a href="#projects" className='flex flex-row'>
+                <p className='flex text-center justify-center'>📚</p>
+                <p className='uppercase hidden md:flex md:flex-col md:justify-end text-sm tracking-wider text-[#49b3ff] hover:text-[#71d7ff]'>
+                    PROJECTS
+                </p>
+            </a>
+            <a href="#about" className='flex'>
+                <p>🧐</p>
+                <p className='uppercase hidden md:flex md:flex-col md:justify-end text-sm tracking-wider text-[#49b3ff] hover:text-[#71d7ff]'>
+                    ABOUT
+                </p>
+            </a>
         </motion.div>
     </header>
   )
