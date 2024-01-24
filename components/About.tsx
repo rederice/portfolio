@@ -16,7 +16,7 @@ export default function About({}: Props) {
         </h3>
 
         <div className='flex pt-24 space-x-5 w-[350px] md:w-[700px] xl:w-[800px] items-center
-        snap-x snap-mandatory h-[60%] mx-auto'>
+        h-[60%] mx-auto'>
           <motion.img
             initial={{opacity: 0,}}
             transition={{duration: 1.2}}

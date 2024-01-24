@@ -16,9 +16,9 @@ export default function ProjectSlides({obj}: Props) {
             onClick={() => setShowModal(true)}
             initial={{scale: 0.9}}
             whileHover={{scale: 1}}
-            className='flex flex-col items-center rounded-lg space-y-7 flex-shrink-0 bg-[#333]/80 p-10
-            w-[500px] md:w-[600px] xl:w-[900px] cursor-pointer transition-opacity duration-200
-            snap-center overflow-hidden'>
+            className='flex flex-col items-center rounded-lg space-y-7 flex-shrink-0 bg-[#333]/80 p-5
+            w-[90vw] md:w-[45vw] xl:w-[45vw] h-[60vh] cursor-pointer transition-opacity duration-200
+             overflow-hidden'>
                 <motion.img
                 initial={{y: -100, opacity: 0,}}
                 transition={{duration: 1.2}}
@@ -29,7 +29,7 @@ export default function ProjectSlides({obj}: Props) {
                 ></motion.img>
 
                 <div className='px-0 md:px-10'>
-                    <h4 className='font-bold text-4xl text-blue-400'>{obj.projectName}</h4>
+                    <h4 className='font-bold text-3xl text-blue-400'>{obj.projectName}</h4>
                     <p className='font-bold text-1xl mt-2 text-yellow-200'>{obj.projectTitle}</p>
                     <div className='flex flex-row space-x-2 mt-2'>
                         {/* iterate through tags & attrs */}

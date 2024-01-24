@@ -52,14 +52,13 @@ export default function Projects({}: Props) {
         initial={{ opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 1.5}}
-        className='relative flex flex-col justify-evenly items-center mx-auto px-10 
-        md:flex-row max-w-full overflow-hidden h-screen'>
-            <h3 className='absolute top-24 uppercase tracking-[20px] text-[#71d7ff] font-[1100] text-2xl'>
+        className='relative flex flex-col justify-center items-center mx-auto px-10 space-y-5
+        max-w-full'>
+            <h3 className='flex flex-row uppercase tracking-[20px] text-[#71d7ff] font-[1100] text-2xl'>
                 Projects
             </h3>
 
-            <div className='flex space-x-5 w-[500px] md:w-[600px] xl:w-[900px] overflow-x-scroll p-5 items-center
-            snap-x snap-mandatory h-[95vh]'>
+            <div className='flex flex-wrap space-x-1 w-[100vw] items-center justify-center'>
                 {/* iterate through projects */}
                 {projects.map((project, i) => <ProjectSlides obj={project} key={i}/>)}
             </div>
