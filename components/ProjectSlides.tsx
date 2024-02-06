@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion'
 import React from 'react'
-import ProjectModal1 from './ProjectModal1'
-import ProjectModal2 from './ProjectModal2'
-import ProjectModal3 from './ProjectModal3'
+import ProjectModal6 from './ProjectModal6'
+import ProjectModal5 from './ProjectModal5'
 import ProjectModal4 from './ProjectModal4'
+import ProjectModal3 from './ProjectModal3'
+import ProjectModal2 from './ProjectModal2'
 
 type Props = {obj: any}
 
@@ -17,14 +18,13 @@ export default function ProjectSlides({obj}: Props) {
             initial={{scale: 0.9}}
             whileHover={{scale: 1}}
             className='flex flex-col items-center rounded-lg space-y-7 flex-shrink-0 bg-[#333]/80 p-5
-            w-[90vw] md:w-[45vw] xl:w-[45vw] h-[60vh] cursor-pointer transition-opacity duration-200
-             overflow-hidden'>
+            w-[90vw] md:w-[45vw] xl:w-[45vw] h-[50vh] md:h-[60vh] xl:h-[70vh] cursor-pointer transition-opacity duration-200'>
                 <motion.img
                 initial={{y: -100, opacity: 0,}}
                 transition={{duration: 1.2}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{once: true}}
-                className="w-32 h-32 rounded-xl xl:w-[200px] xl:h-[200px] object-cover object-center border-blue-400 border-4"
+                className="w-32 h-32 rounded-xl xl:w-[300px] xl:h-[300px] object-cover object-center border-blue-400 border-4"
                 src={obj.projectAvatar}
                 ></motion.img>
 
@@ -47,10 +47,11 @@ export default function ProjectSlides({obj}: Props) {
                     </p>
                 </div>
             </motion.article>
-            <div>{showModal && obj.num === 1 ? (<ProjectModal1 setShowModal={setShowModal}/>): null}</div>
-            <div>{showModal && obj.num === 2 ? (<ProjectModal2 setShowModal={setShowModal}/>): null}</div>
-            <div>{showModal && obj.num === 3 ? (<ProjectModal3 setShowModal={setShowModal}/>): null}</div>
+            <div>{showModal && obj.num === 6 ? (<ProjectModal6 setShowModal={setShowModal}/>): null}</div>
+            <div>{showModal && obj.num === 5 ? (<ProjectModal5 setShowModal={setShowModal}/>): null}</div>
             <div>{showModal && obj.num === 4 ? (<ProjectModal4 setShowModal={setShowModal}/>): null}</div>
+            <div>{showModal && obj.num === 3 ? (<ProjectModal3 setShowModal={setShowModal}/>): null}</div>
+            <div>{showModal && obj.num === 2 ? (<ProjectModal2 setShowModal={setShowModal}/>): null}</div>
         </>
     )
 }
