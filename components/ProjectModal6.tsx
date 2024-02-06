@@ -54,7 +54,7 @@ export default function ProjectModal(obj: Props) {
                         <div className='flex flex-col'>
                             <h3 className='text-3xl text-white py-8 font-bold tracking-[0.3rem]'>My Role</h3>
                             <h4 className='text-white text-lg pt-6 pb-10 tracking-wider space-y-2'>
-                                <ul className="list-disc list-inside">
+                                <ul className="list-disc list-inside marker:text-[#9C82E1]">
                                     <li>UX Researcher</li>
                                     <li>UX Designer</li>
                                 </ul>
@@ -70,7 +70,7 @@ export default function ProjectModal(obj: Props) {
                         <div className='flex flex-col'>
                             <h3 className='text-3xl text-white py-8 font-bold tracking-[0.3rem]'>Skills</h3>
                             <h4 className='text-white text-lg pt-6 pb-10 tracking-wider space-y-2'>
-                                <ul className="list-disc list-inside">
+                                <ul className="list-disc list-inside marker:text-[#9C82E1]">
                                     <li>Heuristic Evaluation</li>
                                     <li>User Research</li>
                                     <li>Usability study</li>
@@ -81,7 +81,7 @@ export default function ProjectModal(obj: Props) {
                         <div className='flex flex-col'>
                             <h3 className='text-3xl text-white py-8 font-bold tracking-[0.3rem]'>Tools</h3>
                             <h4 className='text-white text-lg pt-6 pb-10 tracking-wider space-y-2'>
-                                <ul className="list-disc list-inside">
+                                <ul className="list-disc list-inside marker:text-[#9C82E1]">
                                     <li>Figma</li>
                                     <li>Google Form</li>
                                     <li>Google Doc</li>
@@ -101,7 +101,7 @@ export default function ProjectModal(obj: Props) {
                         <div className='flex flex-col'>
                             <h3 className='text-3xl text-white py-8 font-bold tracking-[0.3rem]'>Testing Objective</h3>
                             <div className='text-white text-lg pt-6 pb-10 tracking-wider'>
-                                <ul className='list-disc pl-6 py-4 space-y-4 marker:text-blue-400'>
+                                <ul className='list-disc pl-6 py-4 space-y-4 marker:text-[#9C82E1]'>
                                     <li>Identify the weakness and strengths of the navigation system and hierarchy.</li>
                                     <li>Investigate whether visitors are able to download documents successfully from the system.</li>
                                 </ul>
@@ -110,7 +110,7 @@ export default function ProjectModal(obj: Props) {
                         <div className='flex flex-col'>
                             <h3 className='text-3xl text-white py-8 font-bold tracking-[0.3rem]'>Testing Goals</h3>
                             <div className='text-white text-lg pt-6 pb-10 tracking-wider'>
-                                <ul className='list-disc pl-6 py-4 space-y-4 marker:text-blue-400'>
+                                <ul className='list-disc pl-6 py-4 space-y-4 marker:text-[#9C82E1]'>
                                     <li>Reveal usability issues among navigation bar design.</li>
                                     <li>Identify accessibility level for popular functionality.</li>
                                     <li>Establish solutions to improve usability.</li>
@@ -184,7 +184,7 @@ export default function ProjectModal(obj: Props) {
                             <h3 className='text-3xl text-white py-2 font-bold tracking-[0.3rem]'>Persona</h3>
                         </div>
                         <div className='text-white text-lg py-6 space-y-4 tracking-wider'>
-                            <div className='flex flex-row flex-wrap gap-4 justify-center'>
+                            <figure className='flex flex-row flex-wrap gap-4 justify-center'>
                                 <Image
                                 src="/redesign-persona1.jpg"
                                 loader={imageLoader}
@@ -199,16 +199,16 @@ export default function ProjectModal(obj: Props) {
                                 height={257}
                                 alt='Persona'
                                 ></Image>
-                            </div>
-                            <div className='flex flex-row flex-wrap gap-4 justify-center'>
+                            </figure>
+                            <figure className='flex flex-row flex-wrap gap-4 justify-center'>
                                 <Image
                                 src="/redesign-persona3.png"
                                 loader={imageLoader}
                                 width={433}
                                 height={257}
                                 alt='Persona'
-                                ></Image><
-                            /div>
+                                ></Image>
+                            </figure>
                         </div>
                     </div>
                     {/* user stories */}
@@ -216,16 +216,17 @@ export default function ProjectModal(obj: Props) {
                         <div className='flex flex-row w-[100%] bg-[#9C82E1] align-center justify-center'>
                             <h3 className='text-3xl text-white py-2 font-bold tracking-[0.3rem]'>User Stories</h3>
                         </div>
-                        <div className='text-white text-lg py-6 space-y-4 tracking-wider'>
-                            <div className='flex flex-row flex-wrap gap-4 justify-center'>
+                        <div className='flex flex-row justify-center text-white text-lg pt-6 pb-10 tracking-wider'> 
+                            {/* image */}
+                            <figure className='flex flex-col justify-center py-4'>
                                 <Image
                                 src="/redesign-stories.jpg"
                                 loader={imageLoader}
                                 width={1140}
                                 height={257}
                                 alt='User-Stories'
-                                ></Image><
-                            /div>
+                                ></Image>
+                            </figure>
                         </div>
                     </div>
                     {/* user journey map */}
@@ -233,16 +234,17 @@ export default function ProjectModal(obj: Props) {
                         <div className='flex flex-row w-[100%] bg-[#9C82E1] align-center justify-center'>
                             <h3 className='text-3xl text-white py-2 font-bold tracking-[0.3rem]'>User Journey Map - class research case</h3>
                         </div>
-                        <div className='text-white text-lg py-6 space-y-4 tracking-wider'>
-                            <div className='flex flex-row flex-wrap gap-4 justify-center'>
+                        <div className='flex flex-row justify-center text-white text-lg pt-6 pb-10 tracking-wider'> 
+                            {/* image */}
+                            <figure className='flex flex-col justify-center py-4'>
                                 <Image
                                 src="/redesign-journey.jpg"
                                 loader={imageLoader}
                                 width={1140}
                                 height={257}
                                 alt='User-Journey-Map'
-                                ></Image><
-                            /div>
+                                ></Image>
+                            </figure>
                         </div>
                     </div>
                     {/* usability testing */}
