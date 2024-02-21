@@ -42,10 +42,9 @@ export default function ProjectModal(obj: Props) {
                     {/*body*/}
                     <div className="relative pb-10 flex items-center justify-center -mt-16">
                         <Image
-                        className='rounded-lg border-slate-500 border-2'
-                        src="/autonomy-overview.jpg"
+                        src="/visual-design-banner.jpg"
                         loader={imageLoader}
-                        width={704}
+                        width={1140}
                         height={545}
                         alt='autonomy-overview'
                         ></Image>

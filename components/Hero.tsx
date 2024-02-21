@@ -8,37 +8,27 @@ type Props = {}
 const imageLoader = require("../pages/api/imageLoader.js");
 
 export default function Hero({}: Props) {
-    const [text, count] = useTypewriter({
-        words: [
-            "Hi, I'm Hung-Fang.👋",
-            "A former Full-Stack Developer👨‍💻...",
-            "Also, Product Manager🎯",
-            "and I LOVE WEB DESIGNS !!!"
-        ],
-        loop: true,
-        delaySpeed: 2000
-    })
   return (
-    <div className='flex flex-col space-y-8 items-center justify-center text-center overflow-hidden h-screen'>
-        <BackgroundCircles />
-        <Image
-        className='relative rounded-full h-32 w-32 mx-auto'
-        src="/avatar.jpeg"
-        loader={imageLoader}
-        width={100}
-        height={100}
-        alt="avatar" />
-        <div className='z-20'>
-            <h2 className='text-sm uppercase font-[1000] text-[#49ccff] tracking-[15px] pb-2'>Web Developer</h2>
-            <h1 className='text-5xl lg:text-6xl font-semibold scroll-px-10'>
-                <span className='mr-3'>{text}</span>
-                <Cursor cursorColor='#2eb4eb'></Cursor>
-            </h1>
+    <div className='flex flex-col space-y-16 justify-start px-[8vw] h-screen'>
+        <div className="flex flex-row text-black font-bold pt-[10vh] leading-tight
+         xl:text-8xl md:text-8xl text-6xl">
+            <p>User Experience<br/>
+            Researcher<span className="text-lavendar">.</span></p>
+        </div>
 
-            <div className='flex flex-row justify-center space-x-2 pt-5'>
-                <Link href="#projects"><button className='heroButton'>Projects</button></Link>                
-                <Link href="#about"><button className='heroButton'>About</button></Link>
+        <div className="flex flex-col items-end leading-tight text-black
+         xl:text-4xl md:text-3xl text-xl">
+            <div className="flex flex-row">Hello! I am&nbsp;<div className="font-bold">Hung-Fang</div>, a passionate UX researcher</div>
+            <div className="flex flex-row items-end">with &nbsp;
+                <div className="font-semibold text-shadow-lg shadow-lavendar
+                xl:text-6xl md:text-5xl text-2xl">Software Product Design</div>
             </div>
+            <div className="flex flex-row">experience.</div>
+        </div>
+
+        <div className="flex flex-row justify-center pt-4">
+            <button className="px-6 py-4 rounded-md bg-lavendar-semilight text-shadow-sm shadow-black shadow-md
+            hover:bg-lavendar xl:text-4xl md:text-4xl text-2xl"><a href="/portfolio/Resume_HungfangChen.pdf" target="_blank">View Résumé</a></button>
         </div>
     </div>
   )

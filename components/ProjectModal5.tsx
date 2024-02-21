@@ -42,9 +42,9 @@ export default function ProjectModal(obj: Props) {
                     {/*body*/}
                     <div className="relative pb-10 flex items-center justify-center -mt-16">
                         <Image
-                        src="/scale-out-overview.png"
+                        src="/panel-design-banner.jpg"
                         loader={imageLoader}
-                        width={704}
+                        width={1140}
                         height={545}
                         alt='scale-out-overview'
                         ></Image>

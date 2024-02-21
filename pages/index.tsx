@@ -7,8 +7,8 @@ import About from '../components/About'
 
 export default function Home() {
   return (
-    <div className='bg-[rgb(36,36,36)] text-white h-screen 
-    overflow-scroll z-0'>
+    <div className="bg-[url('/portfolio/bg.png')] bg-cover text-white h-screen 
+    overflow-scroll z-0">
       <Head>
         <meta property="og:image" content="/portfolio/favicon.ico"></meta>
         <link rel="icon" href="/portfolio/favicon.ico"></link>

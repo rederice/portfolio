@@ -15,34 +15,48 @@ export default function ProjectSlides({obj}: Props) {
         <>
             <motion.article 
             onClick={() => setShowModal(true)}
-            initial={{scale: 0.9}}
-            whileHover={{scale: 1}}
-            className='flex flex-col items-center rounded-lg space-y-7 flex-shrink-0 bg-[#333]/80 p-5
-            w-[90vw] md:w-[45vw] xl:w-[45vw] h-[50vh] md:h-[60vh] xl:h-[70vh] cursor-pointer transition-opacity duration-200'>
+            transition={{
+                duration: 0.2
+            }}
+            whileHover={{
+                boxShadow: "0px 0px 8px rgb(98, 51, 204)"
+            }}
+            className='flex flex-col m-2 items-start rounded-lg space-y-7 bg-[#FFF]/40 p-5
+            w-[84vw] h-[70vh] md:w-[38vw] md:h-[70vh] xl:w-[40vw] xl:h-[70vh] cursor-pointer transition-opacity duration-200'>
+                <div className='flex flex-row px-0 space-x-2'>
+                    <div className="flex flex-row text-lavendar">{obj.num}</div>
+                    <div className="flex flex-row text-black">|</div>
+                    <div className='flex flex-row text-black flex-wrap'>
+                        {/* iterate through roles */}
+                        {obj.projectRoles.map(
+                            (tag: string, i: number) => <p key={i}>{tag}・</p>
+                        )}
+                        {obj.projectTitle}
+                    </div>
+                </div>
                 <motion.img
                 initial={{y: -100, opacity: 0,}}
                 transition={{duration: 1.2}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{once: true}}
-                className="w-32 h-32 rounded-xl xl:w-[300px] xl:h-[300px] object-cover object-center border-blue-400 border-4"
+                className="w-32 h-32 w-[84vw] md:w-[38vw] xl:w-[40vw] h-[30vh] md:h-[25vh] xl:h-[40vh] object-contain object-center border-lavender-400 border-1"
                 src={obj.projectAvatar}
                 ></motion.img>
 
-                <div className='px-0 md:px-10'>
-                    <h4 className='font-bold text-3xl text-blue-400'>{obj.projectName}</h4>
-                    <p className='font-bold text-1xl mt-2 text-yellow-200'>{obj.projectTitle}</p>
-                    <div className='flex flex-row space-x-2 mt-2'>
+                <div className='px-0'>
+                    <h4 className='font-bold text-2xl text-lavendar'>{obj.projectName}</h4>
+                    <div className='flex flex-row m-2 flex-wrap'>
                         {/* iterate through tags & attrs */}
                         {obj.projectTags.map(
                             (tag: string, i:number) =>
-                            <p className='text-sm border border-transparent rounded-md py-1 px-2 bg-slate-200 text-black' key={i}>{tag}</p>
+                            <p className='text-sm border border-transparent rounded-md py-1 px-2 mr-1 mb-1 bg-black text-pinky' key={i}>{tag}</p>
                         )}
                         {obj.projectAttrs.map(
                             (attr: string, i:number) => 
-                            <p className='text-sm border border-transparent rounded-md py-1 px-2 bg-yellow-100 text-black' key={i}>{attr}</p>
+                            <p className='text-sm border border-transparent rounded-md py-1 px-2 mr-1 mb-1 bg-lavendar-light text-black' key={i}>{attr}</p>
                         )}
                     </div>
-                    <p className='list-disc space-y-4 text-lg pt-2 tracking-wider'>
+                    <p className='list-disc space-y-4 pt-2 tracking-wider text-black'>
                         {obj.projectIntro}
                     </p>
                 </div>

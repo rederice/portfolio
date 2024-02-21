@@ -7,7 +7,7 @@ const imageLoader = require("../pages/api/imageLoader.js");
 
 export default function Header({}: Props) {
   return (
-    <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20'>
+    <header className='sticky top-0 px-[8vw] py-5 bg-pinky/90 flex items-start justify-between w-[100%] z-20'>
         <motion.div 
         initial={{
             x: -500,
@@ -22,8 +22,16 @@ export default function Header({}: Props) {
         transition={{
             duration: 1.5
         }}
-        className='flex flex-row items-center'>
-            <a href="#hero" className='font-extrabold text-yellow-300 font-sans tracking-wider cursor-pointer'>
+        className='flex flex-row items-center'>        
+            <motion.img
+              initial={{opacity: 0,}}
+              transition={{duration: 1.2}}
+              whileInView={{opacity: 1}}
+              viewport={{once: true}}
+              className="w-[32px] h-[32px] bg-lavendar-light"
+              src="/portfolio/favicon.ico"
+              ></motion.img>
+            <a href="#hero" className='pl-2 font-extrabold text-lavendar font-sans tracking-wider cursor-pointer'>
                 HUNG-FANG&apos;s PORTFOLIO
             </a>
         </motion.div>
@@ -42,17 +50,22 @@ export default function Header({}: Props) {
         transition={{
             duration: 1.5
         }}
-        className='flex flex-row items-center text-blue-400 font-bold cursor-pointer space-x-6'>
+        className='flex flex-row items-center text-black cursor-pointer space-x-6'>
             <a href="#projects" className='flex flex-row'>
-                <p className='flex text-center justify-center'>📚</p>
-                <p className='uppercase hidden md:flex md:flex-col md:justify-end text-sm tracking-wider text-[#49b3ff] hover:text-[#71d7ff]'>
-                    PROJECTS
+                <p className='flex flex-col justify-end text-sm tracking-wider hover:underline hover:underline-offset-4 hover:decoration-lavendar'>
+                    Work
                 </p>
             </a>
+            <p>|</p>
             <a href="#about" className='flex'>
-                <p>🧐</p>
-                <p className='uppercase hidden md:flex md:flex-col md:justify-end text-sm tracking-wider text-[#49b3ff] hover:text-[#71d7ff]'>
-                    ABOUT
+                <p className='flex flex-col md:justify-end text-sm tracking-wider hover:underline hover:underline-offset-4 hover:decoration-lavendar'>
+                    About
+                </p>
+            </a>
+            <p>|</p>
+            <a href="/portfolio/Resume_HungfangChen.pdf" target="_blank" className='flex'>
+                <p className='flex flex-col md:justify-end text-sm tracking-wider hover:underline hover:underline-offset-4 hover:decoration-lavendar'>
+                    Résumé
                 </p>
             </a>
         </motion.div>
