@@ -27,7 +27,7 @@ export default function ProjectModal(obj: Props) {
                                     Website Redesign: Taipei City Office of Commerce
                                 </h3>
                                 <h4 className='pt-2 font-semibold tracking-wider text-center'>
-                                    Usability study on redesigning a legacy government website with better user experiences
+                                    Conducted usability study on redesigning a legacy government website to create better user experiences
                                 </h4>
                             </div>
                             <button

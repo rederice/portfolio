@@ -27,7 +27,7 @@ export default function ProjectModal(obj: Props) {
                             Short Paper: An Investigation of Cyber Autonomy on Government Websites
                             </h3>
                             <h4 className='pt-2 font-semibold tracking-wider text-center'>
-                            Investigated autonomy issues among G7 government websites in cyber security aspect
+                            Developed a demonstration website to present quantitative analysis through data mining on cyber autonomy issues from G7 websites
                             </h4>
                         </div>
                         <button

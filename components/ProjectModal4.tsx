@@ -27,7 +27,7 @@ export default function ProjectModal(obj: Props) {
                                 Public Decision Making Map System
                             </h3>
                             <h4 className='pt-2 font-semibold tracking-wider text-center'>
-                                Introducing a digital map system GUI for government users
+                                Developed a fancy digital map operation and dashboard GUI for government users
                             </h4>
                         </div>
                         <button

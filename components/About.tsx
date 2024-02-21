@@ -38,8 +38,8 @@ export default function About({}: Props) {
     initial={{ opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration: 1.5}}
-    className='relative flex flex-col px-[8vw] space-y-10 max-w-full'>
-        <div className="flex flex-row self-start pt-[10vh] font-bold text-4xl text-black tracking-wider">
+    className='relative flex flex-col px-[8vw] pt-[10vh] space-y-10 max-w-full'>
+        <div className="flex flex-row self-start font-bold text-4xl text-black tracking-wider">
             About Me<span className="text-lavendar">.</span>
         </div>
 
@@ -57,7 +57,7 @@ export default function About({}: Props) {
                   <ul className="list-inside list-disc marker:text-lavendar-semilight">
                       {skillset.skills.map((skill, skill_i) => 
                         <li className="p-2 
-                        xl:text-3xl md:text-xl" key={skill_i}>{skill}</li>)}
+                        xl:text-2xl md:text-xl" key={skill_i}>{skill}</li>)}
                   </ul>
                 </div>
               )}

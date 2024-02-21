@@ -21,8 +21,8 @@ export default function ProjectSlides({obj}: Props) {
             whileHover={{
                 boxShadow: "0px 0px 8px rgb(98, 51, 204)"
             }}
-            className='flex flex-col m-2 items-start rounded-lg space-y-7 bg-[#FFF]/40 p-5
-            w-[84vw] h-[70vh] md:w-[38vw] md:h-[70vh] xl:w-[40vw] xl:h-[70vh] cursor-pointer transition-opacity duration-200'>
+            className='flex flex-col m-2 rounded-lg py-7 bg-[#FFF]/40 p-5
+            sm:w-[84vw] sm:h-[70vh] md:w-[38vw] md:h-[70vh] lg:w-[38vw] lg:h-[60vh] xl:w-[40vw] xl:h-[65vh] cursor-pointer transition-opacity duration-200'>
                 <div className='flex flex-row px-0 space-x-2'>
                     <div className="flex flex-row text-lavendar">{obj.num}</div>
                     <div className="flex flex-row text-black">|</div>
@@ -39,7 +39,8 @@ export default function ProjectSlides({obj}: Props) {
                 transition={{duration: 1.2}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{once: true}}
-                className="w-32 h-32 w-[84vw] md:w-[38vw] xl:w-[40vw] h-[30vh] md:h-[25vh] xl:h-[40vh] object-contain object-center border-lavender-400 border-1"
+                className="sm:w-[84vw] md:w-[38vw] lg:w-[50vw] xl:w-[60vw] sm:h-[40vh] md:h-[18vh] lg:h-[25vh] xl:h-[28vh]
+                object-contain object-center py-2"
                 src={obj.projectAvatar}
                 ></motion.img>
 

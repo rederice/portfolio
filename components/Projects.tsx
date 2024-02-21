@@ -40,25 +40,25 @@ export default function Projects({}: Props) {
         projectTags: ["Data Visualization", "Front-end Design"],
         projectRoles: ["Frontend Develop", "GUI", "Frontend/Tech Researcher"],
         projectAttrs: ["2019", "2018"],
-        projectIntro: "Developed a demonstration website to present quantitative analysis through data mining on cyber autonomy issues from G7 websites ."
+        projectIntro: "Developed a website to present quantitative analysis through data mining on cyber autonomy issues from G7 websites."
     },{
         num: 2,
         projectAvatar: "/portfolio/oop.jpg",
         projectName: "Taiwan High Speed Rail Booking System",
-        projectTitle: "Final Project, Object-oriented Analysis and Design Course",
+        projectTitle: "OOP Course @NTU",
         projectTags: ["Front-end Design", "Presentation"],
         projectRoles: ["Full-stack Develop", "Infrastructure", "Architecture designer"],
         projectAttrs: ["2019"],
-        projectIntro: "Simulated booking system of THSR to demonstrate object-oriented programming using software engineering techniques."
+        projectIntro: "Developed THSR booking system architecture using object-oriented programming."
     },{
         num: 1,
         projectAvatar: "/portfolio/nchc.jpg",
         projectName: "Certificate Verification System on Blockchain",
-        projectTitle: "Internship, National Center for High-performance Computing",
+        projectTitle: "National Center for High-performance Computing",
         projectTags: ["Tech research", "Presentation"],
         projectRoles: ["Full-stack Develop", "Infrastructure", "Architecture designer"],
         projectAttrs: ["2017"],
-        projectIntro: "Introduced a verifiable system for schools to upload certificates onto Ethereum smart contracts."
+        projectIntro: "Developed a verifiable system interface for schools to upload certificates onto smart contracts."
     }]
 
     return (
