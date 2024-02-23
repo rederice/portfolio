@@ -6,8 +6,12 @@ type Props = {}
 const imageLoader = require("../pages/api/imageLoader.js");
 
 export default function Header({}: Props) {
+    function anchorHeroSection(){
+        const anchorPoint = document.getElementById("hero")!;
+        anchorPoint.scrollIntoView();
+    }
   return (
-    <header className='sticky top-0 px-[8vw] py-5 bg-pinky/90 flex items-start justify-between w-[100%] z-20'>
+    <header className='sticky top-0 px-[8vw] md:py-5 sm:py-2 bg-pinky/90 flex items-center justify-between w-[100%] z-20'>
         <motion.div 
         initial={{
             x: -500,
@@ -28,10 +32,11 @@ export default function Header({}: Props) {
               transition={{duration: 1.2}}
               whileInView={{opacity: 1}}
               viewport={{once: true}}
-              className="w-[32px] h-[32px] bg-lavendar-light"
+              className="w-[32px] h-[32px] bg-lavendar-light cursor-pointer"
               src="/portfolio/favicon.ico"
-              ></motion.img>
-            <a href="#hero" className='pl-2 font-extrabold text-lavendar font-sans tracking-wider cursor-pointer'>
+              onClick={anchorHeroSection}
+            ></motion.img>
+            <a href="#hero" className='pl-2 font-extrabold text-lavendar font-sans tracking-wider cursor-pointer invisible md:visible'>
                 HUNG-FANG&apos;s PORTFOLIO
             </a>
         </motion.div>
