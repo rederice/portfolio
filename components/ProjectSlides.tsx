@@ -21,46 +21,33 @@ export default function ProjectSlides({obj}: Props) {
             whileHover={{
                 boxShadow: "0px 0px 8px rgb(98, 51, 204)"
             }}
-            className='flex flex-col m-2 rounded-lg py-7 bg-[#FFF]/40 p-5
+            className='flex flex-col m-2 rounded-lg py-7 bg-[#FFF]/40 p-5 gap-4
             sm:w-[84vw] sm:h-[70vh] md:w-[38vw] md:h-[70vh] lg:w-[38vw] lg:h-[60vh] xl:w-[40vw] xl:h-[65vh] cursor-pointer transition-opacity duration-200'>
-                <div className='flex flex-row px-0 space-x-2'>
-                    <div className="flex flex-row text-lavendar">{obj.num}</div>
-                    <div className="flex flex-row text-black">|</div>
-                    <div className='flex flex-row text-black flex-wrap'>
-                        {/* iterate through roles */}
-                        {obj.projectRoles.map(
-                            (tag: string, i: number) => <p key={i}>{tag}・</p>
-                        )}
-                        {obj.projectTitle}
-                    </div>
-                </div>
                 <motion.img
-                initial={{y: -100, opacity: 0,}}
-                transition={{duration: 1.2}}
+                initial={{y: -50, opacity: 0.5}}
+                transition={{duration: 0.5}}
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{once: true}}
-                className="sm:w-[84vw] md:w-[38vw] lg:w-[50vw] xl:w-[60vw] sm:h-[40vh] md:h-[18vh] lg:h-[25vh] xl:h-[28vh]
-                object-contain object-center py-2"
+                className="sm:w-[84vw] md:w-[38vw] lg:w-[50vw] xl:w-[60vw]
+                object-contain object-center"
                 src={obj.projectAvatar}
                 ></motion.img>
 
-                <div className='px-0'>
-                    <h4 className='font-bold text-2xl text-lavendar'>{obj.projectName}</h4>
-                    <div className='flex flex-row m-2 flex-wrap'>
-                        {/* iterate through tags & attrs */}
-                        {obj.projectTags.map(
-                            (tag: string, i:number) =>
-                            <p className='text-sm border border-transparent rounded-md py-1 px-2 mr-1 mb-1 bg-black text-pinky' key={i}>{tag}</p>
-                        )}
-                        {obj.projectAttrs.map(
-                            (attr: string, i:number) => 
-                            <p className='text-sm border border-transparent rounded-md py-1 px-2 mr-1 mb-1 bg-lavendar-light text-black' key={i}>{attr}</p>
-                        )}
-                    </div>
-                    <p className='list-disc space-y-4 pt-2 tracking-wider text-black'>
-                        {obj.projectIntro}
-                    </p>
+                <h4 className='flex flew-row font-bold text-2xl text-lavendar'>{obj.projectName}</h4>
+                <div className='flex flex-row flex-wrap'>
+                    {/* iterate through tags & attrs */}
+                    {obj.projectTags.map(
+                        (tag: string, i:number) =>
+                        <p className='text-sm border border-transparent rounded-md py-1 px-2 mr-1 mb-1 bg-black text-pinky' key={i}>{tag}</p>
+                    )}
+                    {obj.projectAttrs.map(
+                        (attr: string, i:number) => 
+                        <p className='text-sm border border-transparent rounded-md py-1 px-2 mr-1 mb-1 bg-lavendar-light text-black' key={i}>{attr}</p>
+                    )}
                 </div>
+                <p className='list-disc tracking-wider text-black'>
+                    {obj.projectIntro}
+                </p>
             </motion.article>
             <div>{showModal && obj.num === 6 ? (<ProjectModal6 setShowModal={setShowModal}/>): null}</div>
             <div>{showModal && obj.num === 5 ? (<ProjectModal5 setShowModal={setShowModal}/>): null}</div>

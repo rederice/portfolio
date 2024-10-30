@@ -9,9 +9,9 @@ export default function ProjectModal(obj: Props) {
     
     return (
         <><motion.div
-        initial={{scale: 0.1, opacity: 0.1}}
-        transition={{duration: 0.2}}
-        whileInView={{scale: 1, opacity: 1}}
+        initial={{opacity: 0}}
+        transition={{duration: 1.2}}
+        whileInView={{opacity: 1}}
         className="flex fixed justify-center items-center overflow-hidden inset-0 z-50 outline-none focus:outline-none bg-black/80 h-screen"
         >
             <div className="flex py-6 items-center justify-center w-[100vw]">

@@ -8,7 +8,7 @@ export default function Projects({}: Props) {
     const projects = [{
         num: 6,
         projectAvatar: "/portfolio/redesign-banner.jpg",
-        projectName: "Website Redesign: Taipei City Office of Commerce",
+        projectName: "Website design for City Government",
         projectTitle: "MSUX @ASU",
         projectTags: ["Usability Study", "User Research", "Prototyping"],
         projectRoles: ["UX design", "GUI", "UX Researcher"],
@@ -17,7 +17,7 @@ export default function Projects({}: Props) {
     },{
         num: 5,
         projectAvatar: "/portfolio/panel-design-banner.jpg",
-        projectName: "Web Panel Design: NAS Management Interface",
+        projectName: "Web Panel Interface Design",
         projectTitle: "Infortrend Technology Inc.",
         projectTags: ["Competitive Research", "Feasibility Study", "Prototyping"],
         projectRoles: ["Product Design", "GUI", "Product Manager"],
@@ -26,7 +26,7 @@ export default function Projects({}: Props) {
     },{
         num: 4,
         projectAvatar: "/portfolio/map-design-banner.jpg",
-        projectName: "Web Develop: Typhoon Map Dashboard",
+        projectName: "Typhoon Map Dashboard",
         projectTitle: "RiChi Technology Inc.",
         projectTags: ["UX design", "Front-end Design"],
         projectRoles: ["Frontend Develop", "GUI", "Full-stack Engineer"],
@@ -35,7 +35,7 @@ export default function Projects({}: Props) {
     },{
         num: 3,
         projectAvatar: "/portfolio/visual-design-banner.jpg",
-        projectName: "Web Develop: Data Visualization of Cyber Autonomy",
+        projectName: "Data Visualization for Cyber Autonomy",
         projectTitle: "NSlab @NTU",
         projectTags: ["Data Visualization", "Front-end Design"],
         projectRoles: ["Frontend Develop", "GUI", "Frontend/Tech Researcher"],
@@ -44,21 +44,12 @@ export default function Projects({}: Props) {
     },{
         num: 2,
         projectAvatar: "/portfolio/oop.jpg",
-        projectName: "Taiwan High Speed Rail Booking System",
+        projectName: "High Speed Rail Booking System",
         projectTitle: "OOP Course @NTU",
-        projectTags: ["Front-end Design", "Presentation"],
+        projectTags: ["Front-end Design", "System Architecture"],
         projectRoles: ["Full-stack Develop", "Infrastructure", "Architecture designer"],
         projectAttrs: ["2019"],
         projectIntro: "Developed THSR booking system architecture using object-oriented programming."
-    },{
-        num: 1,
-        projectAvatar: "/portfolio/nchc.jpg",
-        projectName: "Certificate Verification System on Blockchain",
-        projectTitle: "National Center for High-performance Computing",
-        projectTags: ["Tech research", "Presentation"],
-        projectRoles: ["Full-stack Develop", "Infrastructure", "Architecture designer"],
-        projectAttrs: ["2017"],
-        projectIntro: "Developed a verifiable system interface for schools to upload certificates onto smart contracts."
     }]
 
     return (
