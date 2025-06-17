@@ -13,7 +13,7 @@ export default function Projects({}: Props) {
         projectTags: ["User Research", "Prototyping", "Product Management", "Front-end Design", "System Architecture"],
         projectRoles: ["UX design", "Product Management", "Full-stack Engineer"],
         projectAttrs: ["2024"],
-        projectIntro: "Designed an integrated ticket dashboard portal that connects Sales' vendor-side orders with internal tracking systems, streamlining management workflows and enhancing operational visibility."
+        projectIntro: "Designed an integrated ticket dashboard portal that connects Sales team vendor-side orders with internal tracking systems, streamlining management workflows and enhancing operational visibility."
     },{
         num: 6,
         projectAvatar: "/portfolio/redesign-banner.jpg",

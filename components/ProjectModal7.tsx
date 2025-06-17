@@ -27,7 +27,7 @@ export default function ProjectModal(obj: Props) {
                                     Dashboard design: Business Ticket Dashboard Portal
                                 </h3>
                                 <h4 className='pt-2 font-semibold tracking-wider text-center'>
-                                    Designed an integrated ticket dashboard portal that connects Sales' vendor-side orders with internal tracking systems
+                                    Designed an integrated ticket dashboard portal that connects Sales team vendor-side orders with internal tracking systems
                                 </h4>
                             </div>
                             <button
