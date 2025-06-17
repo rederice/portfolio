@@ -12,6 +12,7 @@ module.exports = {
         'lavendar-semilight': '#9C82E1',
         'lavendar-light': '#C5BAE2',
         'pinky': '#FBEBF5',
+        'skyblue': '#D4E6FC',
       },
       textShadow: {
         sm: '0 1px 2px var(--tw-shadow-color)',

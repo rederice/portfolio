@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+import ProjectModal7 from './ProjectModal7'
 import ProjectModal6 from './ProjectModal6'
 import ProjectModal5 from './ProjectModal5'
 import ProjectModal4 from './ProjectModal4'
@@ -49,11 +50,14 @@ export default function ProjectSlides({obj}: Props) {
                     {obj.projectIntro}
                 </p>
             </motion.article>
-            <div>{showModal && obj.num === 6 ? (<ProjectModal6 setShowModal={setShowModal}/>): null}</div>
-            <div>{showModal && obj.num === 5 ? (<ProjectModal5 setShowModal={setShowModal}/>): null}</div>
-            <div>{showModal && obj.num === 4 ? (<ProjectModal4 setShowModal={setShowModal}/>): null}</div>
-            <div>{showModal && obj.num === 3 ? (<ProjectModal3 setShowModal={setShowModal}/>): null}</div>
-            <div>{showModal && obj.num === 2 ? (<ProjectModal2 setShowModal={setShowModal}/>): null}</div>
+            <div className='z-50'>
+                <div>{showModal && obj.num === 7 ? (<ProjectModal7 setShowModal={setShowModal}/>): null}</div>
+                <div>{showModal && obj.num === 6 ? (<ProjectModal6 setShowModal={setShowModal}/>): null}</div>
+                <div>{showModal && obj.num === 5 ? (<ProjectModal5 setShowModal={setShowModal}/>): null}</div>
+                <div>{showModal && obj.num === 4 ? (<ProjectModal4 setShowModal={setShowModal}/>): null}</div>
+                <div>{showModal && obj.num === 3 ? (<ProjectModal3 setShowModal={setShowModal}/>): null}</div>
+                <div>{showModal && obj.num === 2 ? (<ProjectModal2 setShowModal={setShowModal}/>): null}</div>
+            </div>
         </>
     )
 }

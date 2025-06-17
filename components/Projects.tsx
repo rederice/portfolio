@@ -6,6 +6,15 @@ type Props = {}
 
 export default function Projects({}: Props) {
     const projects = [{
+        num: 7,
+        projectAvatar: "/portfolio/closed-loop-banner.jpg",
+        projectName: "Business Ticket Dashboard Portal",
+        projectTitle: "Sanhau Automotive Inc.",
+        projectTags: ["User Research", "Prototyping", "Product Management", "Front-end Design", "System Architecture"],
+        projectRoles: ["UX design", "Product Management", "Full-stack Engineer"],
+        projectAttrs: ["2024"],
+        projectIntro: "Designed an integrated ticket dashboard portal that connects Sales' vendor-side orders with internal tracking systems, streamlining management workflows and enhancing operational visibility."
+    },{
         num: 6,
         projectAvatar: "/portfolio/redesign-banner.jpg",
         projectName: "Website design for City Government",
